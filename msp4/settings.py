@@ -120,17 +120,15 @@ WSGI_APPLICATION = 'msp4.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://qvmkyhyemwmtxi:ffc28062159528f7f9fccd3c82a73334b023d0c7801ffcd8e9fa2d7e380ad412@ec2-63-32-30-191.eu-west-1.compute.amazonaws.com:5432/d6rp6vh6vtbo98')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
+
+
+
 
 
 # Password validation

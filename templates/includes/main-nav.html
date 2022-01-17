@@ -13,37 +13,47 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Clothing
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="face-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Face
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Activewear &amp; Essentials</a>
-                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Jeans</a>
-                <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Shirts</a>
-                <a href="{% url 'products' %}?category=activewear,essentials,jeans,shirts" class="dropdown-item">All Clothing</a>
+            <div class="dropdown-menu border-0" aria-labelledby="face-link">
+                <a href="{% url 'products' %}?category=foundation" class="dropdown-item">Foundation</a>
+                <a href="{% url 'products' %}?category=blush" class="dropdown-item">Blush</a>
+                <a href="{% url 'products' %}?category=bronzer" class="dropdown-item">Bronzer</a>
+                <a href="{% url 'products' %}?category=foundation,blush,bronzer" class="dropdown-item">All Face Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Homeware
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="eyes-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Eyes
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=bed_bath" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="{% url 'products' %}?category=bed_bath,kitchen_dining" class="dropdown-item">All Homeware</a>
+            <div class="dropdown-menu border-0" aria-labelledby="eyes-link">
+                <a href="{% url 'products' %}?category=eyeliner" class="dropdown-item">Eyeliner</a>
+                <a href="{% url 'products' %}?category=eyeshadow" class="dropdown-item">Eyeshadow</a>
+                <a href="{% url 'products' %}?category=eyebrow" class="dropdown-item">Eyebrow</a>
+                <a href="{% url 'products' %}?category=mascara" class="dropdown-item">Mascara</a>
+                <a href="{% url 'products' %}?category=eyeliner,eyeshadow,eyebrow,mascara" class="dropdown-item">All Eyes Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="lips-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Lips
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+            <div class="dropdown-menu border-0" aria-labelledby="lips-link">
+                <a href="{% url 'products' %}?category=lip_liner" class="dropdown-item">Lip Liner</a>
+                <a href="{% url 'products' %}?category=lipstick" class="dropdown-item">Lipstick</a>
+                <a href="{% url 'products' %}?category=lip_liner,lipstick" class="dropdown-item">All Lips Products</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="nails" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Nails
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="nails">
+                <a href="{% url 'products' %}?category=nail_polish" class="dropdown-item">Nail Polish</a>
             </div>
         </li>
     </ul>

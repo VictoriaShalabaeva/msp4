@@ -59,7 +59,7 @@
                                     <p><strong>Color:</strong></p>
                                     <select class="form-control rounded-0 w-50" name="product_color" id='id_product_color'>
                                         {% for color in product.product_colors %}
-                                        <option value="{{ color.colour_name }}"><span style="color:{{ color.hex_value }};height:20px;width:20px;"></span>{{ color.colour_name }}</option>
+                                        <option style="color: {{ color.hex_value }};" value="{{ color.colour_name }}">&#xf45c; {{ color.colour_name }}</option>
                                         {% endfor %}
                                     </select>
                                 </div>

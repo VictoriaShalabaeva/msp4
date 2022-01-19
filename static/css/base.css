@@ -3,11 +3,15 @@ html {
 }
 
 body {
-	background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+	background: url('/media/homepage_background.jpg') no-repeat center center fixed;
 	background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: "Lato";
+    color: #242121;
+    font-family: 'Roboto', sans-serif;
+}
+
+.playfair-font {
+    font-family: 'Playfair Display', serif;
 }
 
 /* from Bulma */
@@ -28,8 +32,8 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     min-width: 260px;
 }
 
@@ -50,7 +54,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #a50f12;
     color: white;
 }
 
@@ -62,8 +66,8 @@ body {
     border: 1px solid black !important;
 }
 
-.bg-black {
-    background: #000 !important;
+.bg-red {
+    background: #a50f12 !important;
 }
 
 .overlay {
@@ -282,4 +286,9 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
+}
+
+/* to visualize Font Awesome icons in select options */
+select {
+    font-family: 'FontAwesome'
 }

@@ -1,0 +1,1 @@
+web: gunicorn victorias-beauty.wsgi:application

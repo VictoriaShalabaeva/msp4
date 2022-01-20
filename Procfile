@@ -1,1 +1,1 @@
-web: gunicorn victorias-beauty.wsgi:app
+web: gunicorn victorias-beauty.wsgi:application

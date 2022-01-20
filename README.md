@@ -2,7 +2,7 @@
 
 View the live project [Here](https://)
 
-*Victoria's Beauty* is an interactive website that allows to .
+*Victoria's Beauty* is an e-commerce store that allows to .
 
 The website is designed to be responsive and accessible on a range of devices, making it easy to navigate through.
 
@@ -17,11 +17,20 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to view a list of products and select some to purchase.
     - I want to view individual products details and identify the price, description, product rating, product image and available colors. 
     - I want to easily view the total of my purchases at any time to avoid spending too much.
+    - I want to easily select the color and quantity of a product when purchasing it.
+
     - I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.
     - I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).
     - I want to sort multiple categories of products simultaneously and find the best priced or best rated products across broad categories.
+
+    - I want to search by name, brand or description to find a specific product I would like to purchase.
     - I want to easily see what I have searched for and the number of results.
-    - I want to easily select the color and quantity of a product when purchasing it.
+
+    - I want to view items in my bag to be purchased.
+    - I want to adjust the quantity of individual items in my bag.
+    - I want to easily enter my paymant information and check out quickly without hassles.
+    - I want to confidently provide my personal and payment information (in a safe and secure manner).
+    - I want to view an order confirmation after checkout.
 
   - **As a site user:**
     
@@ -30,6 +39,12 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to easily recover my password in case I forget it.
     - I want to receive a email confirmation after registering to verify that my account registration was successful.
     - I want to view my personal order history and save my payment information. 
+
+  - **As a store Owner:**
+
+    - I want to add new items to my store.
+    - I want to edit/update products details.
+    - I want to delete items that are no longer fore sale.
       
 ### Design
 
@@ -105,13 +120,10 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Materialize:](https://materializecss.com/)
+1. [Django:](https://www.djangoproject.com/)
+2. [Django-Allauth:](https://django-allauth.readthedocs.io/en/latest/index.html)
 
-   Grid System to make the site responsive,
-
-   Navbar to make a responsive navigation header,
-
-   Cards components for displaying recipes.
+    Allauth was used to handle authentication, registration and account management as well as 3rd party (social) account authentication.
 
 2. [MongoDB:](https://www.mongodb.com/)
 
@@ -434,7 +446,7 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
-- The code was written following the Code Institute tutorials.
+- The code for a website structure, logic and functionality was written following the Code Institute tutorials on Boutique Ado Project. 
 
 - The code for handling error 404 was taken from [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/).
 

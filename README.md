@@ -125,6 +125,10 @@ The website is designed to be responsive and accessible on a range of devices, m
 
     Allauth was used to handle authentication, registration and account management as well as 3rd party (social) account authentication.
 
+3. Stripe
+
+4. AWS
+
 2. [MongoDB:](https://www.mongodb.com/)
 
    MongoDB was used to store recipes and users data.

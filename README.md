@@ -129,6 +129,8 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 4. AWS
 
+5. https://temp-mail.org/en/
+
 2. [MongoDB:](https://www.mongodb.com/)
 
    MongoDB was used to store recipes and users data.

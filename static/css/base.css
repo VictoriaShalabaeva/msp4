@@ -104,6 +104,16 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.product-brand {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.product-name {
+    letter-spacing: 0.5px;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

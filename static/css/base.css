@@ -172,6 +172,12 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 /* --------------------------------- Media queries */
 
 /* Slightly larger container on xl screens */
@@ -331,9 +337,14 @@ input[name='q']::placeholder {
     .logo-font {
         font-size: 1rem;
     }
+
+    .card-img-top {
+        height: 150px;
+    }
 }
 
 /* to visualize Font Awesome icons in select options */
 select {
     font-family: 'FontAwesome'
 }
+

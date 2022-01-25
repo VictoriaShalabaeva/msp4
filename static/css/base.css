@@ -28,9 +28,9 @@ body {
     text-transform: uppercase;
 }
 
-.main-logo-link {
+/* .main-logo-link {
     width: fit-content;
-}
+} */
 
 .shop-now-button {
     background: white;
@@ -301,7 +301,7 @@ input[name='q']::placeholder {
     }
 
     .navbar-toggler {
-        padding: .6rem .6rem;
+        padding: .2rem .2rem;
         font-size: 1rem;
     }
 
@@ -326,6 +326,10 @@ input[name='q']::placeholder {
 
     .shop-now-button {
         min-width: 140px;
+    }
+
+    .logo-font {
+        font-size: 1rem;
     }
 }
 

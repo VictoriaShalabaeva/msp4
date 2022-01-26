@@ -57,7 +57,7 @@
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Color:</strong></p>
-                                    <select class="form-contro w-50" name="product_color" id='id_product_color'>
+                                    <select class="form-control w-50" name="product_color" id='id_product_color'>
                                         {% for color in product.product_colors %}
                                         <option style="color: {{ color.hex_value }};" value="{{ color.colour_name }}">&#xf45c; {{ color.colour_name }}</option>
                                         {% endfor %}

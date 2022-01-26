@@ -6,7 +6,7 @@ body {
     /*Photo credit: https://www.freepik.com/free-photo/high-fashion-look-glamor-closeup-portrait-beautiful-sexy-stylish-caucasian-young-woman-model-with-bright-makeup-with-red-lips-with-perfect-clean-skin-big-black-hat_7249675.htm#query=makeup&position=9&from_view=search */
 	background: url('/media/homepage_background.jpg') no-repeat center center fixed;
 	background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 190px);
     color: #242121;
     font-family: 'Roboto', sans-serif;
 }
@@ -299,18 +299,18 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 190px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 95px;
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 95px);
     }
 
     .display-4.logo-font.text-white {
@@ -353,12 +353,19 @@ input[name='q']::placeholder {
         min-width: 140px;
     }
 
-    .logo-font {
+    .playfair-font {
         font-size: 1rem;
     }
 
     .img-height {
         height: 180px;
+    }
+
+    .navbar-font {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.21em;
+        text-transform: uppercase;
     }
 }
 

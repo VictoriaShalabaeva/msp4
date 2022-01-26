@@ -59,6 +59,15 @@ body {
     color: white;
 }
 
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #a50f12;
+    color: white !important;
+    border: 1px solid #a50f12;
+}
+
+
 .text-black {
     color: #000 !important;
 }

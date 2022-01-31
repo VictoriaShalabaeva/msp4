@@ -283,49 +283,13 @@ The manual testing is described [Here](manual-testing.md).
 
 #### Fixed bugs
 
-1. On *Edit Recipe* page, the *ingredients* and *preparation steps* sections were displayed as lists of items (see example in the image below) with additional left-side spaces and new lines (undesired). That was introducing further issues with the correct editing of data in the database.
+1. On the *Shopping bag* page, disabling +/- buttons outside 1-99 range did not work for products who had color names consisting of more than one word. For example, in the image below, one can notice that all products that have one-word color name (or no colors) have a disactivated minus button when the quantity is equal to 1. While products with color names, consisting of several words with spaces between them, have active minus buttons and can go to negative quantity values.
 
-    The initial code was rewritten using `join()` function and hyphen signs. `join()` function returns a string as a concatenation of strings in a sequence with a chosen separation (new line separation in our case). Hyphen signs (-) added to the start or end of a block remove the whitespaces before or after that block.
+    <img src="media/bugs/color_quantity_bug.jpg" alt="Disabling +/- buttons outside 1-99 range bug." width="600px" height="auto">
 
-    Initial code:
-      ```
-      {% for ingredient in recipe.ingredients %}
-        {{ ingredient }}
-      {% endfor %}
-      ```
-      <img src="static/images/bugs/edit-recipe-bug.jpg" alt="Edit Recipe page bug." width="700px" height="auto">
+  The problem was solved by cutting spaces from color names: by substituting `{{ item.color }}` with `{{ item.color|cut:' ' }}` in quantity-form.html.
 
-    Final code:
-      ```
-      {{- recipe.ingredients|join('\n') -}}
-      ```
-      <img src="static/images/bugs/edit-recipe-bug-solution.jpg" alt="Correct Edit Recipe page." width="700px" height="auto">
-
-2. The two elements, indicated with red errors (search fields and buttons) in the image below, have *Materialize* classes *s12* and should have occupied two rows in mobile devices. Instead they were placing in one row.
-
-    Initial code:
-      ```
-      <div class="row valign-wrapper center-align">
-        <div class="input-field col s12 l6 xl8">
-            <i class="fas fa-search prefix grey-text text-lighten-1"></i>
-            <input type="text" name="query" id="query" minlength="3" class="validate" required>
-            <label for="query">Search Recipes</label>
-        </div>
-        <div class="col s12 l6 xl4">
-            <button type="submit" class="white-text grey darken-3 waves-effect waves-light btn">
-                <i class="fas fa-search left"></i> Search
-            </button>
-            <a href="{{ url_for('get_recipes') }}" class="white-text orange darken-4 waves-effect waves-light btn">Reset</a>
-        </div>
-      </div>
-      ```
-      <img src="static/images/bugs/search-bar-bug.jpg" alt="Search field bug." width="200px" height="auto">
-    
-    Final code:
-
-      The delition of `valign-wrapper` class in the outer div solved the issue:
-
-      <img src="static/images/bugs/search-bar-bug-solution.jpg" alt="Search field bug solution." width="200px" height="auto">
+2. 
 
 
 #### Existing bugs

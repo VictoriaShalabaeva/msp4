@@ -287,28 +287,29 @@ The manual testing is described [Here](manual-testing.md).
 
     <img src="media/bugs/color_quantity_bug.jpg" alt="Disabling +/- buttons outside 1-99 range bug." width="600px" height="auto">
 
-  The problem was solved by cutting spaces from color names: by substituting `{{ item.color }}` with `{{ item.color|cut:' ' }}` in quantity-form.html.
+    The problem was solved by [cutting](https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#cut) spaces from color names: by substituting `{{ item.color }}` with `{{ item.color|cut:' ' }}` in quantity-form.html.
 
-2. 
+2. On the *Product details* page, it was not possible to display icons inside select options tag (it was not possible to use an <i> tag):
 
+    ```
+    <option value="{{ color.colour_name }}"><i class='fas fa-square-full'></i> {{ color.colour_name }}"</option>
+    ```
+    The solution was found [Here](https://stackoverflow.com/questions/48508431/how-to-add-font-awesome-icons-in-select-options).
+
+    I have set the font family on the select to font awesome:
+    ```
+    select {
+      font-family: 'FontAwesome'
+    }
+    ```
+    and used character points for the square icon `&#xf45c;`:
+    ```
+    <option style="color: {{ color.hex_value }};" value="{{ color.colour_name }}">&#xf45c; {{ color.colour_name }}</option>
+    ```
 
 #### Existing bugs
 
-1. The form input autocomplete field has a white background that does not match well with the page styling. I did not manage to target that particular element to change the colour. However, the background colour of the form input in general has been modified successfully: when the input is introduced for the first time and autocomplete does not work, the background is transparent (as it meant to be).
-
-    <img src="static/images/bugs/autocomplete-white-bug.jpg" alt="Autocomplete form input background." width="700px" height="auto">
-
-2. The background image on real mobile devices has issues:
-    
-    - On Huawei Mate 20, the background image slightly jumps due to an appearing/disappearing address bar. 
-
-    - On iPhone XR, the background image (instead of jumping) creates white spaces when the address bar appears/disappears. 
-    
-      <img src="static/images/bugs/background-image-bug.jpg" alt="Background image bug on physically tested mobile devices." width="200px" height="auto">
-      
-      Secondly, the background image on *All Recipes* and *Profile* pages is stretched out taking all the page length which makes the image have poor resolution. In Chrome DevTools mobile simulations, the background image is fixed while scrolling and takes the height of the view port.
-
-3. The fallback image for recipes cards takes a few seconds to load.
+1. 
         
 ## Deployment
 
@@ -418,9 +419,7 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 - The code for a website structure, logic and functionality was written following the Code Institute tutorials on Boutique Ado Project. 
 
-- The code for handling error 404 was taken from [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/).
-
-- The code for handling error 500 was taken from [Flask documentation](https://flask.palletsprojects.com/en/2.0.x/errorhandling/).
+- The solution on how to add font awesome icons in select options was found [Here](https://stackoverflow.com/questions/48508431/how-to-add-font-awesome-icons-in-select-options).
 
 ### Acknowledgements
 

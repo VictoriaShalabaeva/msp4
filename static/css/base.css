@@ -54,7 +54,10 @@ body {
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
-.btn-black:focus {
+.btn-black:focus,
+.heart:hover,
+.heart:active,
+.heart:focus {
     background: #a50f12;
     color: white;
 }
@@ -375,7 +378,19 @@ input[name='q']::placeholder {
 }
 
 /* to visualize Font Awesome icons in select options */
-select {
+select,
+input {
     font-family: 'FontAwesome'
 }
 
+.heart {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: flex;
+    font-size: 20px;
+}
+
+.product-details-container {
+    position: relative;
+}

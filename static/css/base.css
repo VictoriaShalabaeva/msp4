@@ -317,6 +317,11 @@ input[name='q']::placeholder {
         font-size: 2rem;
     }
 
+    .navbar {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+
     .nav-link {
         padding: 0.15rem;
     }

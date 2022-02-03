@@ -379,23 +379,24 @@ input[name='q']::placeholder {
 
 /* to visualize Font Awesome icons in select options */
 select,
-input {
+.heart {
     font-family: 'FontAwesome'
 }
 
 .heart {
     position: absolute;
     right: 20px;
-    top: 0;
+    bottom: -6px;
     display: flex;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .product-details-container {
     position: relative;
 }
 
-.remove {
+.remove,
+.add-to-bag {
     position: absolute;
     left: 4.8px;
     bottom: 16px;

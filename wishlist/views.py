@@ -25,7 +25,6 @@ def add_to_wishlist(request, item_id):
         if item_id in list(wishlist.keys()):
             if color in wishlist[item_id]['items_by_color'].keys():
                 wishlist[item_id]['items_by_color'][color] += quantity
-                messages.success(request, f'Updated color {color} {product.name} quantity to {wishlist[item_id]["items_by_color"][color]}')
             else:
                 wishlist[item_id]['items_by_color'][color] = quantity
                 messages.success(request, f'Added color {color} {product.name} to your wishlist')

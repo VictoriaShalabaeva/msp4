@@ -394,3 +394,25 @@ input {
 .product-details-container {
     position: relative;
 }
+
+.remove {
+    position: absolute;
+    left: 4.8px;
+    bottom: 16px;
+    display: flex;
+}
+
+.relative {
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    .remove {
+        position: absolute;
+        left: auto;
+        right: 15px;
+        bottom: auto;
+        top: 0;
+        display: flex;
+    }
+} 

@@ -26,12 +26,11 @@
                     <div class="d-block d-md-none">
                         <div class="row">
                             <div class="col">
-                                {% include "wishlist/checkout-buttons.html" %}
                                 <p class="text-muted mb-5">Here you will find all your favorite products at a glance.</p>
                             </div>
                         </div>
                         {% for item in wishlist_items %}
-                            <div class="row">
+                            <div class="row relative">
                                 <div class="col-12 col-sm-6 mb-2">
                                     {% include "wishlist/product-image.html" %}
                                 </div>
@@ -39,7 +38,7 @@
                                     {% include "wishlist/product-info.html" %}
                                 </div>
                                 <div class="col-12 col-sm-6 order-sm-last">
-                                    <p class="my-0">Price: ${{ item.product.price }}</p>
+                                    <p class="my-0"><strong>Price: </strong>${{ item.product.price }}</p>
                                 </div>
                             </div>
                             <div class="row"><div class="col"><hr></div></div>
@@ -51,6 +50,11 @@
                         </div>
                     </div>
                     <div class="table-responsive rounded d-none d-md-block">
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-muted mb-5">Here you will find all your favorite products at a glance.</p>
+                            </div>
+                        </div>
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
@@ -65,7 +69,7 @@
                                     <td class="p-3 w-25">
                                         {% include "wishlist/product-image.html" %}
                                     </td>
-                                    <td class="py-3">
+                                    <td class="py-3 relative">
                                         {% include "wishlist/product-info.html" %}
                                     </td>
                                     <td class="py-3">
@@ -73,11 +77,6 @@
                                     </td>
                                 </tr>
                             {% endfor %}
-                            <tr>
-                                <td colspan="5" class="text-right">
-                                    {% include "wishlist/checkout-buttons.html" %}
-                                </td>
-                            </tr>
                         </table>
                     </div>
                 {% else %}

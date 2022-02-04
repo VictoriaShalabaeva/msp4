@@ -353,23 +353,13 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-### Create database in MongoDB
-
-1. Create an account at [MongoDB](https://www.mongodb.com/).
-2. Create a Cluster, select a Cloud provider (e.g. AWS), select the closest region to you, choose a Cluster Tier (e.g. the M0 Tier, which is the 'free forever' tier), scroll down to the bottom and select 'Cluster Name'. Finally, click on the *Create Cluster* button.
-3. In order to create database user credentials, click on *Database Access* under the *Security* section on the left. Click on *Add New Database User*, make sure that the user privileges are set to *Read and Write to the Database*, and then click *Add User*.
-4. Click on *Network Access* within the *Security* menu, click *Add IP Address* and select *Allow Access From Anywhere*.
-5. Go back to the *Clusters* tab, click on the *Collections* button.
-6. In the *Collections* tab, click *Create Database* and enter the database name and the name of initial collection, press *Create* button. 
-7. Create other collections.
-8. Fill in your database: in each collection click on *Insert Document* button.
-
 ### Deployment to Heroku
 
 1. In the terminal:
 
     - Type `pip3 freeze --local > requirements.txt`. It will update the list of requirements needed to run the application.
     - Type `echo web: python app.py > Procfile` to create the Procfile.
+    - In the Procfile add `web: gunicorn msp4.wsgi:application` (check the Procfile to make sure there is no extra line after the first line as this can confuse Heroku).
 
 2. Create application:
 
@@ -379,29 +369,48 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
     - Enter the name of your application.
     - Select your region.
 
-3. Set up connection to Github Repository:
+3. Build the database in Postgres:
+
+    - Click the *Resources* tab and type in *Postgres* in the *Add-ons* search bar.
+    - Select *Heroku Postgres* and provision a free *Hobby Dev database*.
+    - Install two dependencies: `pip3 install dj_database_url` and `pip3 install psycopg2-binary`.
+    - Freeze your requirements into requirements.txt.
+    - Retrieve the *Database URL* from the hidden *Config Vars* in *Settings*.
+    - Paste the *Database URL* in the database path in *settings.py* and removed the local settings.
+    - Run migrations to build the database in Postgres.
+    - Load fixtures (*categories.json*, *products.json*) with `python3 manage.py loaddata <JSON filename>`.
+    - Create a superuser with `python3 manage.py createsuperuser` and follow the instructions in the terminal.
+    - Remove the Postgres *Database URL* so it doesn't end up in version control.
+    - Type `heroku config:set DISABLE_COLLECTSTATIC=1` in the terminal to stop Heroku collecting the static files.
+
+4. Set up connection to Github Repository:
 
     - Click the *Deploy* tab and select *GitHub-Connect to GitHub* in the *Deployment method* section.
     - A prompt to find a Github repository to connect to will then be displayed.
     - Enter the repository name and click search.
     - Once the repository name has been found, click *Connect*.
 
-4. Set environment variables:
+5. Set environment variables:
 
     - Click the *Setting* tab and then click *Reveal Confid Vars*.
     - Insert your variables:
-      - IP: 0.0.0.0
-      - PORT: 5000
-      - database name you want to connect to
-      - database url (this url can be found on MongoDb: go to the *Overview* tab, click *Connect* button, select *Connect your application*, select you driver and version (e.g. *Python* and *3.6 or later*), then copy the string to the clipboard and paste it for the MONGO_URI variable)
-      - secret key which is required whenever using the flash() and session() functions of Flask
+      - AWS_ACCESS_KEY_ID: obtained from AWS
+      - AWS_SECRET_ACCESS_KEY: obtained from AWS
+      - DATABASE_URL: created when provisioned Postgres
+      - EMAIL_HOST_PASS: obtained from the email provider
+      - EMAIL_HOST_USER: host email address
+      - SECRET_KEY: obtained from miniwebtool
+      - STRIPE_PUBLIC_KEY: obtained from STRIPE
+      - STRIPE_SECRET_KEY: obtained from STRIPE
+      - STRIPE_WH_SECRET: obtained from STRIPE
+      - USE_AWS: True
 
-5. Enable automatic deployment:
+6. Enable automatic deployment:
 
     - Click the *Deploy* tab and scroll to the *Automatic deploys* section.
     - Choose the branch you want to deploy from, then click *Enable Automation Deploys*.
 
-6. View your application:
+7. View your application:
 
     - You can view the application by clicking on the *Open app* button located at the top right corner.
 

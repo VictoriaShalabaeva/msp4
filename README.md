@@ -414,6 +414,43 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
     - You can view the application by clicking on the *Open app* button located at the top right corner.
 
+### AWS
+
+The static css, js and media files are stored in Amazon Web Services (AWS) S3 Bucket.
+
+    - Go to [AWS](aws.amazon.com) and create an account.
+    - Search for S3.
+    - Create a new bucket with the following settings:
+
+        - An appropriate name
+        - Region (closest to you)
+        - Uncheck *Block All Public Access* tickbox
+
+    - Click on the *Properties* tab and enable *Static Website Hosting*. This will allow AWS to host static files.
+    - Input *index.html* and *error.html* in the appropriate fields and hit save.
+    - Click on the *Properties* tab and edit *CORS configuration* to set up the required connection between the Heroku app and the bucket.
+    - Click the *Policy* tab and select *Policy Generator* to create a security policy for the bucket:
+
+        - The policy type: *S3 Bucket Policy*
+        - the *Action*: *get object*.
+        - Copy the *ARN (Amazon Resource Name)* from the bucket and paste it in the *ARN* field.
+    
+    - Click *Add Statement* and then *Generate Policy*.
+    - Copy the generated policy in to the *Bucket Policy Editor*.
+    - Add `/*` at the end of the resource key to allow access to all resources in the bucket.
+    - Click *Save*.
+    - Click the *Access Control* tab and set the list object permission to everyone under the *Public Access* section.
+    - Open *Identity Access Management (IAM)* from the service menu.
+    - Create a group for your user to belong to.
+    - Create an access policy for you the group which gives access to the S3 bucket.
+    - Click the *JSON* tab and select *import managed policy*, search for *S3* and select *S3 Full Access Policy*.
+    - Create a user, give them programmatic access and attach it to the group.
+    - Download the *.csv file that is generated as this contains the keys required to use AWS.
+    - Install *boto3* and *django-storages* using `pip3 install` to connect Django to AWS S3.
+    - Add the AWS keys to the *Config Vars* in *Settings* tab in Heroku (remove `DISABLE_COLLECTSTATIC=1`).
+    - Create a *custom_storages.py* file.
+    - Run `python manage.py collectstatic` and transfers the static files to AWS.
+
 ## Credits
 
 ### Content

@@ -58,7 +58,7 @@ body {
 .heart:hover,
 .heart:active,
 .heart:focus {
-    background: #a50f12;
+    background: #a50f12!important;;
     color: white;
 }
 
@@ -372,3 +372,7 @@ select,
         display: flex;
     }
 } 
+
+.border-transparent:hover {
+    border: 1px solid transparent;
+}

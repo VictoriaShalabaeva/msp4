@@ -65,22 +65,24 @@
                             </thead>
 
                             {% for item in wishlist_items %}
-                            <form class="form" action="{% url 'add_to_bag' item.product.id %}" method="POST">
-                                {% csrf_token %}
-                                <tr>
-                                    <td class="p-3 w-25">
-                                        {% include "wishlist/product-image.html" %}
-                                    </td>
-                                    <td class="py-3 relative">
-                                        {% include "wishlist/product-info.html" %}
-                                    </td>
-                                    <td class="py-3 relative">
+                            <tr>
+                                <td class="p-3 w-25">
+                                    {% include "wishlist/product-image.html" %}
+                                </td>
+                                <td class="py-3 relative">
+                                    {% include "wishlist/product-info.html" %}
+                                </td>
+                                <td class="py-3 relative">
+                                    <form class="form" action="{% url 'add_to_bag' item.product.id %}" method="POST">
+                                        {% csrf_token %}
                                         <p class="my-0">${{ item.product.price }}</p>
+                                        <input type="hidden" name="quantity" value="{{item.quantity}}" />
+                                        <input type="hidden" name="product_color" value="{{item.color}}" />
                                         <input type="submit" class="btn btn-black text-uppercase mt-5 add-to-bag" value="Add to Bag">
                                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                    </td>
-                                </tr>
-                            </form>
+                                    </form>
+                                </td>
+                            </tr>
                             {% endfor %}
                         </table>
                     </div>

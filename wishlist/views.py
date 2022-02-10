@@ -1,15 +1,20 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
+from .models import Wishlist
 from products.models import Product
+from profiles.models import UserProfile
 
 # Create your views here.
 
+@login_required
 def view_wishlist(request):
     """ A view that renders the wishlist contents page """
 
     return render(request, 'wishlist/wishlist.html')
 
+@login_required
 def add_to_wishlist(request, item_id):
     """ Add products to the wishlist """
 
@@ -43,6 +48,7 @@ def add_to_wishlist(request, item_id):
     return redirect(redirect_url)
 
 
+@login_required
 def remove_from_wishlist(request, item_id):
     """Remove the item from the wishlist"""
 

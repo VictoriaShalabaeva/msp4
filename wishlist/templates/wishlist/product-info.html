@@ -1,4 +1,4 @@
 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-<p class="my-0"><strong>Color: </strong>{% if item.product.product_colors %}{{ item.color }}{% else %}N/A{% endif %}</p>
+<p class="my-0"><strong>Color: </strong>{% if item.product.product_colors %}{{ item.product_color }}{% else %}N/A{% endif %}</p>
 <p class="my-0 small text-muted">SKU: {{ item.product.number_id }}</p>
 <a class="remove-item text-danger float-right remove" id="remove_{{ item.item_id }}" data-product_color="{{ item.color }}"><small><i class="fa fa-trash" aria-hidden="true"></i> Remove</small></a>

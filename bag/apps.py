@@ -1,3 +1,7 @@
+"""Code credit: the code is written following the Code Institute tutorials
+(Boutique Ado Project).
+"""
+
 from django.apps import AppConfig
 
 

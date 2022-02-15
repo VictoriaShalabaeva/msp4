@@ -465,6 +465,8 @@ The static css, js and media files are stored in Amazon Web Services (AWS) S3 Bu
 
 - The code for a website structure, logic and functionality was written following the Code Institute tutorials on Boutique Ado Project. 
 
+- Core logic/payment flow comes from [Here](https://stripe.com/docs/payments/accept-a-payment) and CSS from [Here](https://stripe.com/docs/stripe-js).
+
 - The solution on how to add font awesome icons in select options was found [Here](https://stackoverflow.com/questions/48508431/how-to-add-font-awesome-icons-in-select-options).
 
 ### Acknowledgements

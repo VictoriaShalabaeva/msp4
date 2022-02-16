@@ -1,3 +1,7 @@
+"""Code credit: the code is written following the Code Institute tutorials
+(Boutique Ado Project).
+"""
+
 from django import forms
 from .models import Review
 
@@ -15,7 +19,6 @@ class ReviewForm(forms.ModelForm):
         )
 
         fields = ['title', 'description']
-
 
     def __init__(self, *args, **kwargs):
         """

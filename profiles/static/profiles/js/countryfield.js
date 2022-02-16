@@ -1,7 +1,12 @@
+/*
+    Code credit: the code is written following the Code Institute tutorials
+    (Boutique Ado Project).
+*/
+
 let countrySelected = $('#id_default_country').val();
 if(!countrySelected) {
     $('#id_default_country').css('color', '#aab7c4');
-};
+}
 $('#id_default_country').change(function() {
     countrySelected = $(this).val();
     if(!countrySelected) {

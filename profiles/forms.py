@@ -1,3 +1,7 @@
+"""Code credit: the code is written following the Code Institute tutorials
+(Boutique Ado Project).
+"""
+
 from django import forms
 from .models import UserProfile
 
@@ -30,5 +34,6 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black profile-form-input'
+            self.fields[field].widget.attrs['class'] = 'border-black \
+                profile-form-input'
             self.fields[field].label = False

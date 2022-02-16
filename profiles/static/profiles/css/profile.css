@@ -1,3 +1,6 @@
+/* Code credit: the code is written following the Code Institute tutorials
+(Boutique Ado Project). */
+
 .order-history {
     max-height: 416px; /* height of profile form + submit button */
     overflow-y: auto;

@@ -1,5 +1,11 @@
 #!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
+
+"""Code credit: the code is written following the Code Institute tutorials
+(Boutique Ado Project).
+
+Django's command-line utility for administrative tasks.
+"""
+
 import os
 import sys
 

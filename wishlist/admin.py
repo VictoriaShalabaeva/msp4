@@ -1,3 +1,7 @@
+"""Code credit: the code is written following the Code Institute tutorials
+(Boutique Ado Project).
+"""
+
 from django.contrib import admin
 from .models import Wishlist, WishlistLineItem
 
@@ -13,5 +17,5 @@ class WishlistAdmin(admin.ModelAdmin):
 
     list_display = ('user',)
 
-admin.site.register(Wishlist, WishlistAdmin)
 
+admin.site.register(Wishlist, WishlistAdmin)

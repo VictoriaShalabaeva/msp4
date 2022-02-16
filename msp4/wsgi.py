@@ -1,4 +1,6 @@
-"""
+"""Code credit: the code is written following the Code Institute tutorials
+(Boutique Ado Project).
+
 WSGI config for msp4 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.

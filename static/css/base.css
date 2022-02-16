@@ -4,8 +4,8 @@ html {
 
 body {
     /*Photo credit: https://www.freepik.com/free-photo/high-fashion-look-glamor-closeup-portrait-beautiful-sexy-stylish-caucasian-young-woman-model-with-bright-makeup-with-red-lips-with-perfect-clean-skin-big-black-hat_7249675.htm#query=makeup&position=9&from_view=search */
-	background: url('/media/homepage_background.jpg') no-repeat center center fixed;
-	background-size: cover;
+    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background-size: cover;
     height: calc(100vh - 190px);
     color: #242121;
     font-family: 'Roboto', sans-serif;
@@ -27,10 +27,6 @@ body {
 .logo-font {
     text-transform: uppercase;
 }
-
-/* .main-logo-link {
-    width: fit-content;
-} */
 
 .shop-now-button {
     background: white;
@@ -58,7 +54,8 @@ body {
 .heart:hover,
 .heart:active,
 .heart:focus {
-    background: #a50f12!important;;
+    background: #a50f12 !important;
+    ;
     color: white;
 }
 
@@ -69,7 +66,6 @@ body {
     color: white !important;
     border: 1px solid #a50f12;
 }
-
 
 .text-black {
     color: #000 !important;
@@ -84,16 +80,16 @@ body {
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -127,7 +123,6 @@ input[name='q']::placeholder {
 }
 
 /* ------------------------------- bootstrap toasts */
-
 .message-container {
     position: fixed;
     top: 72px;
@@ -155,17 +150,14 @@ input[name='q']::placeholder {
     object-fit: cover;
 }
 
-/* --------------------------------- Media queries */
-
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* Allauth form formatting */
-
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
@@ -186,8 +178,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -202,24 +194,22 @@ input[name='q']::placeholder {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
-
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8; /* text-info */
 }
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -308,7 +298,8 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 
@@ -371,7 +362,7 @@ select,
         top: 0;
         display: flex;
     }
-} 
+}
 
 .border-transparent:hover {
     border: 1px solid transparent;

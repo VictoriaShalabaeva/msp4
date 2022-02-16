@@ -11,13 +11,12 @@
 <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
 <form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <a class="btn btn-outline-black text-uppercase border-transparent" href="{% url 'home' %}">Cancel</a>
-  <button type="submit" class="btn btn-black text-uppercase">{% trans 'Sign Out' %}</button>
+    {% csrf_token %}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <a class="btn btn-outline-black text-uppercase border-transparent" href="{% url 'home' %}">Cancel</a>
+    <button type="submit" class="btn btn-black text-uppercase">{% trans 'Sign Out' %}</button>
 </form>
-
 
 {% endblock %}

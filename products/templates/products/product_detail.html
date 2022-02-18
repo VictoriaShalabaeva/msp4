@@ -100,7 +100,13 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" formaction="{% url 'add_to_wishlist' product.id %}" class="btn btn-outline-black mt-5 text-uppercase" value="Add to Wishlist">
+                                {% if request.user.is_authenticated %}
+                                    {% if product_wishlisted %}
+                                        <input type="submit" formaction="{% url 'remove_from_wishlist' product.id %}" class="btn btn-outline-black mt-5 text-uppercase" value="Remove from Wishlist">
+                                    {% else %}
+                                        <input type="submit" formaction="{% url 'add_to_wishlist' product.id %}" class="btn btn-outline-black mt-5 text-uppercase" value="Add to Wishlist">
+                                    {% endif %}
+                                {% endif %}
                                 <input type="submit" class="btn btn-black text-uppercase mt-5" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">

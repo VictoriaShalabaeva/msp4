@@ -9,4 +9,5 @@
         <input type="hidden" name="product_color" value="{{ item.product_color }}">
     {% endif %}
     <input type="submit" class="text-danger float-right remove" value="Remove">
+    <input type="hidden" name="redirect_url" value="{{ request.path }}">
 </form>

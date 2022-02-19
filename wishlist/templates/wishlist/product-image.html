@@ -1,7 +1,11 @@
 <!-- Code credit: the code is written following the Code Institute tutorials (Boutique Ado Project). -->
 
 {% if item.product.image_url %}
-<img class="img-fluid rounded" src="{{ item.product.image_url }}" alt="{{ item.product.name }}">
+    <a href="{% url 'product_detail' item.product.id %}">
+        <img class="img-fluid rounded" src="{{ item.product.image_url }}" alt="{{ item.product.name }}">
+    </a>
 {% else %}
-<img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+    <a href="{% url 'product_detail' item.product.id %}">
+        <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+    </a>
 {% endif %}

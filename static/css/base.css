@@ -370,6 +370,15 @@ select,
     border: 0;
 }
 
+.wishlist-add-to-bag {
+    position: absolute;
+    left: auto;
+    right: 15px;
+    bottom: 0;
+    top: auto;
+    display: flex;
+}
+
 .relative {
     position: relative;
 }

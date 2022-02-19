@@ -62,17 +62,21 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ### Wireframes
 
-  - *Home* page - [View](static/pdf/home-page.pdf)
+  - *Home* page - [View](docs/wireframes/home-page.pdf)
 
-  - *All Recipes* page - [View](static/pdf/all-recipes.pdf)
+  - *All Products* page - [View](docs/wireframes/all-products-page.pdf)
 
-  - *Profile* page - [View](static/pdf/profile.pdf)
+  - *Product Detail* page - [View](docs/wireframes/product-detail-page.pdf)
 
-  - *Add New Recipe* page - [View](static/pdf/add-new-recipe.pdf)
+  - *My Profile* page - [View](docs/wireframes/my-profile-page.pdf)
 
-  - *Log In* page - [View](static/pdf/log-in.pdf)
+  - *Shopping Bag* page - [View](docs/wireframes/shopping-bag-page.pdf)
 
-  - *Register* page - [View](static/pdf/register.pdf)
+  - *Wishlist* page - [View](docs/wireframes/wishlist-page.pdf)
+
+  - *Sign In* page - [View](docs/wireframes/sign-in-page.pdf)
+
+  - *Sign Up* page - [View](docs/wireframes/sign-up-page.pdf)
 
 ## Features
 
@@ -229,19 +233,17 @@ The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services wer
 
 - [W3C Markup Validator](https://validator.w3.org/) did not detect any problem in the HTML code on *Home*, *All Recipes*, *Log In* and *Register* pages:
 
-  <img src="static/images/testing/w3c-markup-validator.jpg" alt="Results in W3C Markup Validator." width="500px" height="auto">
+  <img src="media/testing/w3c-markup-validator.jpg" alt="Results in W3C Markup Validator." width="500px" height="auto">
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) did not detect any problem in the CSS code:
 
-  <img src="static/images/testing/w3c-css-validator.jpg" alt="Results in W3C CSS Validator." width="500px" height="auto">
+  <img src="media/testing/w3c-css-validator.jpg" alt="Results in W3C CSS Validator." width="500px" height="auto">
 
-- [JSHint](https://jshint.com/) did not detect any problem in the JavaScript code:
-
-  <img src="static/images/testing/jshint.jpg" alt="Results in JSHint." width="500px" height="auto">
+- [JSHint](https://jshint.com/) did not detect any problem in the JavaScript code.
 
 - [PEP8 online](http://pep8online.com/) did not detect any problem in the Python code:
 
-  <img src="static/images/testing/pep8-online.jpg" alt="Results in PEP8 online validator." width="500px" height="auto">
+  <img src="media/testing/pep8-online.jpg" alt="Results in PEP8 online validator." width="300px" height="auto">
 
 ### Testing User Stories from User Experience (UX) Section
 

@@ -73,8 +73,22 @@ body {
     color: #000 !important;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.text-black:hover,
+.text-black:active,
+.text-black:focus {
+    color: #a50f12 !important;
+}
+
 .border-black {
     border: 1px solid black !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #efefef;
 }
 
 .bg-red {
@@ -349,6 +363,11 @@ select,
     left: 4.8px;
     bottom: 16px;
     display: flex;
+}
+
+.remove {
+    background-color: transparent;
+    border: 0;
 }
 
 .relative {

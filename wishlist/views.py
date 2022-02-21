@@ -15,7 +15,8 @@ from profiles.models import UserProfile
 @login_required
 def view_wishlist(request):
     """ A view that renders the wishlist contents page """
-    user_wishlist = get_object_or_404(Wishlist, user=request.user)
+    # user_wishlist = get_object_or_404(Wishlist, user=request.user)
+    user_wishlist, _ = Wishlist.objects.get_or_create(request.user)
     wishlist_items = WishlistLineItem.objects.filter(wishlist=user_wishlist)
 
     return render(request, 'wishlist/wishlist.html',

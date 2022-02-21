@@ -77,7 +77,7 @@ def product_detail(request, product_id):
     color = None
     if 'product_color' in request.POST:
         color = request.POST['product_color']
-    user_wishlist = Wishlist.objects.get(user=request.user)
+    user_wishlist, _ = Wishlist.objects.get_or_create(request.user)
     product_wishlisted = False
     if color:
         product_wishlisted = WishlistLineItem.objects.filter(

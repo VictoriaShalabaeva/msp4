@@ -37,11 +37,11 @@
 
   - On the *Product detailes* page, a shopper can click on a *Add a Review* button to write a review (see image with a *Add a Review* button above). When clicking the button, a shopper can write a review by filling in a form.
 
-    <img src="images/user_stories/add_review.jpg" alt="Add Review page." width="500px" height="auto">
+    <img src="images/user_stories/add_review.jpg" alt="Add Review page." width="200px" height="auto">
 
 ## As a shopper, I want to be able to edit or delete my reviews (in case I change my opinion).
 
-  - After a review submission, a shopper can edit (or delete) his reviews by clicking on *Edit* (or *Delete*) buttons available at the bottom of each review. Then, a shopper is redirected to a *Edit Review* page to resubmite a form.
+  - After a review submission, a shopper can edit (or delete) his reviews by clicking on *Edit* (or *Delete*) buttons available at the bottom of each review. Upon clicking on *Edit* button, a shopper is redirected to a *Edit Review* page to resubmite a form. If *Delete* button is clicked, the review is deleted and an info message is shown.
 
   <img src="images/user_stories/edit_review.jpg" alt="Edit Review page." width="500px" height="auto">
 
@@ -77,7 +77,7 @@
     
   - When a new item is added to a shopping bag, the summary of items can be seen in the info box that appears in the top right corner.
 
-    <img src="images/user_stories/info_box.jpg" alt="Info box." width="500px" height="auto">
+    <img src="images/user_stories/info_box.jpg" alt="Info box." width="200px" height="auto">
 
 ## As a shopper, I want to adjust the quantity of individual items in my bag.
 
@@ -90,3 +90,17 @@
     <img src="images/user_stories/bag_total.jpg" alt="Bag purchases total." width="500px" height="auto">
 
 ## As a shopper, I want to easily enter my payment information and check out quickly without hassles
+
+  - A shopper can click on "Secure Checkout" button either from a *Shopping bag* or from an info window with a shopping bag summery.
+
+    <img src="images/user_stories/secure_checkout.jpg" alt="Secure checkout buttons." width="500px" height="auto">
+
+  - When a shopper goes to a *Checkout* page they are presented with a two column container that has delivery details on the left and another order summary on the right. The delivery details will be pre-populate if the user has logged in with active account. If the user is not logged in, the order will still be processed but will be done as an Anonymous user. The user can log in by clicking the link at the bottom of the screen which will take them to the log in screen and then back to the Shopping Basket. Credit card details are entered in to the bottom field and the field is validated using Stripe. Clicking Complete Order will display an "processing" overlay and then take the user to the Checkout Success page. The user is able to return to the Shopping Bag page if they wish to amend the order before payment processing. This requirement is deemed as being completed.
+
+  - On the *Checkout* page a shopper will find a form to fill in a delivery information (if a shopper is logged in, the delivery information will be pre-populated). If the user is not logged in, the order will be processed for an anonymous user. 
+  
+  - A shopper can view a summery of his order. 
+  
+  - The payment information is on the bottom of the page.
+
+    <img src="images/user_stories/checkout.jpg" alt="Secure checkout buttons." width="500px" height="auto">

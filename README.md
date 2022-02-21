@@ -35,7 +35,9 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to easily enter my payment information and check out quickly without hassles.
     - I want to confidently provide my personal and payment information (in a safe and secure manner).
     - I want to view an order confirmation after checkout.
+
     - I want to create my wishlist (to leave product to purchase later).
+    - I want to add items to the shopping bag directly from my wishlist.
 
   - **As a site user:**
     

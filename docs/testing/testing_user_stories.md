@@ -29,6 +29,22 @@
 
 ## As a shopper, I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).
 
+  - Before taking a decision on purchasing any products, a shopper can read reviews on a specific product left by other users."
+
+    <img src="images/user_stories/reviews.jpg" alt="Product reviews." width="500px" height="auto">
+
+## As a shopper, I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.
+
+  - On the *Product detailes* page, a shopper can click on a *Add a Review* button to write a review (see image with a *Add a Review* button above). When clicking the button, a shopper can write a review by filling in a form.
+
+    <img src="images/user_stories/add_review.jpg" alt="Add Review page." width="500px" height="auto">
+
+## As a shopper, I want to be able to edit or delete my reviews (in case I change my opinion).
+
+  - After a review submission, a shopper can edit (or delete) his reviews by clicking on *Edit* (or *Delete*) buttons available at the bottom of each review. Then, a shopper is redirected to a *Edit Review* page to resubmite a form.
+
+  <img src="images/user_stories/edit_review.jpg" alt="Edit Review page." width="500px" height="auto">
+
 ## As a shopper, I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.
 
   - Products can be sorted from the dropdown menu in the navigation bar.

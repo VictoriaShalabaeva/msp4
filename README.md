@@ -19,8 +19,8 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to easily select the color and quantity of a product when purchasing it.
 
     - I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).
-    - I want to leave a review on a product, so that other users may be able to benefit from my opinions on a specific product.
-    - I want to be able to edit my reviews (in case I change my opinion).
+    - I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.
+    - I want to be able to edit or delete my reviews (in case I change my opinion).
 
     - I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.
     - I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).

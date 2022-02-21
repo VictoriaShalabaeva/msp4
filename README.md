@@ -16,21 +16,26 @@ The website is designed to be responsive and accessible on a range of devices, m
 
     - I want to view a list of products and select some to purchase.
     - I want to view individual products details and identify the price, description, product rating, product image and available colors. 
-    - I want to easily view the total of my purchases at any time to avoid spending too much.
     - I want to easily select the color and quantity of a product when purchasing it.
+
+    - I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).
+    - I want to leave a review on a product, so that other users may be able to benefit from my opinions on a specific product.
+    - I want to be able to edit my reviews (in case I change my opinion).
 
     - I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.
     - I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).
-    - I want to sort multiple categories of products simultaneously and find the best priced or best rated products across broad categories.
-
+    
     - I want to search by name, brand or description to find a specific product I would like to purchase.
     - I want to easily see what I have searched for and the number of results.
 
     - I want to view items in my bag to be purchased.
     - I want to adjust the quantity of individual items in my bag.
-    - I want to easily enter my paymant information and check out quickly without hassles.
+    - I want to easily view the total of my purchases at any time to avoid spending too much.
+
+    - I want to easily enter my payment information and check out quickly without hassles.
     - I want to confidently provide my personal and payment information (in a safe and secure manner).
     - I want to view an order confirmation after checkout.
+    - I want to create my wishlist (to leave product to purchase later).
 
   - **As a site user:**
     
@@ -233,21 +238,21 @@ The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services wer
 
 - [W3C Markup Validator](https://validator.w3.org/) did not detect any problem in the HTML code on *Home*, *All Recipes*, *Log In* and *Register* pages:
 
-  <img src="media/testing/w3c-markup-validator.jpg" alt="Results in W3C Markup Validator." width="500px" height="auto">
+  <img src="docs/testing/images/validators/w3c-markup-validator.jpg" alt="Results in W3C Markup Validator." width="500px" height="auto">
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) did not detect any problem in the CSS code:
 
-  <img src="media/testing/w3c-css-validator.jpg" alt="Results in W3C CSS Validator." width="500px" height="auto">
+  <img src="docs/testing/images/validators/w3c-css-validator.jpg" alt="Results in W3C CSS Validator." width="500px" height="auto">
 
 - [JSHint](https://jshint.com/) did not detect any problem in the JavaScript code.
 
 - [PEP8 online](http://pep8online.com/) did not detect any problem in the Python code:
 
-  <img src="media/testing/pep8-online.jpg" alt="Results in PEP8 online validator." width="300px" height="auto">
+  <img src="docs/testing/images/validators/pep8-online.jpg" alt="Results in PEP8 online validator." width="300px" height="auto">
 
 ### Testing User Stories from User Experience (UX) Section
 
-Please see [Here](testing_user_stories.md) the user stories testing with corresponding screenshots.
+Please see [Here](docs/testing/testing_user_stories.md) the user stories testing with corresponding screenshots.
 
 ### Testing Functionality, Usability and Responsiveness
 
@@ -287,7 +292,7 @@ The manual testing is described [Here](manual-testing.md).
 
 1. On the *Shopping bag* page, disabling +/- buttons outside 1-99 range did not work for products who had color names consisting of more than one word. For example, in the image below, one can notice that all products that have one-word color name (or no colors) have a disactivated minus button when the quantity is equal to 1. While products with color names, consisting of several words with spaces between them, have active minus buttons and can go to negative quantity values.
 
-    <img src="media/bugs/color_quantity_bug.jpg" alt="Disabling +/- buttons outside 1-99 range bug." width="600px" height="auto">
+    <img src="docs/testing/images/bugs/color_quantity_bug.jpg" alt="Disabling +/- buttons outside 1-99 range bug." width="600px" height="auto">
 
     The problem was solved by [cutting](https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#cut) spaces from color names: by substituting `{{ item.color }}` with `{{ item.color|cut:' ' }}` in quantity-form.html.
 

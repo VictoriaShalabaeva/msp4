@@ -1,5 +1,3 @@
-<!-- Code credit: the code is written following the Code Institute tutorials (Boutique Ado Project). -->
-
 {% extends "base.html" %}
 {% load static %}
 
@@ -33,8 +31,8 @@
                 {{ form | crispy }}
                 <!--buttons to confirm edit or cancel the process-->
                 <div class="text-right">
-                    <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black text-uppercase mt-5">Cancel</a>
-                    <button class="btn btn-black text-uppercase mt-5" type="submit">Edit Review</button>
+                    <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black text-uppercase mt-3">Cancel</a>
+                    <button class="btn btn-black text-uppercase mt-3" type="submit">Edit Review</button>
                 </div>
             </form>
         </div>

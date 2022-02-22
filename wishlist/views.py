@@ -16,7 +16,7 @@ from profiles.models import UserProfile
 def view_wishlist(request):
     """ A view that renders the wishlist contents page """
 
-    user_wishlist = get_object_or_404(Wishlist, user=request.user)
+    user_wishlist, _ = Wishlist.objects.get_or_create(user=request.user)
     wishlist_items = WishlistLineItem.objects.filter(wishlist=user_wishlist)
     
     return render(request, 'wishlist/wishlist.html',
@@ -33,7 +33,7 @@ def add_to_wishlist(request, item_id):
     color = None
     if 'product_color' in request.POST:
         color = request.POST['product_color']
-    user_wishlist, _ = Wishlist.objects.get_or_create(request.user)
+    user_wishlist, _ = Wishlist.objects.get_or_create(user=request.user)
 
     if request.method == 'POST':
         product_wishlisted = False

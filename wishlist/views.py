@@ -2,8 +2,7 @@
 (Boutique Ado Project).
 """
 
-from django.shortcuts import (render, redirect, reverse,
-                              HttpResponse, get_object_or_404)
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -18,7 +17,7 @@ def view_wishlist(request):
 
     user_wishlist, _ = Wishlist.objects.get_or_create(user=request.user)
     wishlist_items = WishlistLineItem.objects.filter(wishlist=user_wishlist)
-    
+
     return render(request, 'wishlist/wishlist.html',
                   {"wishlist_items": wishlist_items})
 

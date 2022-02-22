@@ -238,19 +238,19 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate HTML, CSS, JS and Python code, respectively, to ensure no syntax error.
 
-- [W3C Markup Validator](https://validator.w3.org/) did not detect any problem in the HTML code on *Home*, *All Recipes*, *Log In* and *Register* pages:
+- [W3C Markup Validator](https://validator.w3.org/) did not detect any errors in the HTML code on all pages of the project:
 
-  <img src="docs/testing/images/validators/w3c-markup-validator.jpg" alt="Results in W3C Markup Validator." width="500px" height="auto">
+  <img src="docs/testing/images/validators/w3c-markup-validator.jpg" alt="Results in W3C Markup Validator." width="300px" height="auto">
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) did not detect any problem in the CSS code:
 
-  <img src="docs/testing/images/validators/w3c-css-validator.jpg" alt="Results in W3C CSS Validator." width="500px" height="auto">
+  <img src="docs/testing/images/validators/w3c-css-validator.jpg" alt="Results in W3C CSS Validator." width="300px" height="auto">
 
 - [JSHint](https://jshint.com/) did not detect any problem in the JavaScript code.
 
 - [PEP8 online](http://pep8online.com/) did not detect any problem in the Python code:
 
-  <img src="docs/testing/images/validators/pep8-online.jpg" alt="Results in PEP8 online validator." width="300px" height="auto">
+  <img src="docs/testing/images/validators/pep8-online.jpg" alt="Results in PEP8 online validator." width="150" height="auto">
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -258,7 +258,7 @@ Please see [Here](docs/testing/testing_user_stories.md) the user stories testing
 
 ### Testing Functionality, Usability and Responsiveness
 
-The manual testing is described [Here](manual-testing.md).
+The manual testing is described [Here](docs/testing/manual_testing.md).
 
 ### Further Testing
 

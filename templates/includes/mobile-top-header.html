@@ -1,4 +1,4 @@
-<ul class="my-auto pl-0">
+<ul class="my-auto pl-0 font-size">
     <li class="list-inline-item">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -58,7 +58,7 @@
         <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
             <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i>
-                <span class="my-0">
+                <span class="my-0 bag-font">
                     {% if grand_total %}
                         ${{ grand_total|floatformat:2 }}
                     {% else %}

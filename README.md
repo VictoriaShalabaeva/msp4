@@ -1,12 +1,12 @@
 # Victoria's Beauty Website
 
-View the live project [Here](https://)
+View the live project [Here](https://victorias-beauty.herokuapp.com/)
 
-*Victoria's Beauty* is an e-commerce store that allows to .
+*Victoria's Beauty* is a fictional e-commerce store website created for educational purposes. No commercial revenue is generated from this website.
 
 The website is designed to be responsive and accessible on a range of devices, making it easy to navigate through.
 
-![Responsive Design](static/images/responsive-design.jpg)
+![Responsive Design](docs/images/responsive-design.jpg)
 
 ## User Experience (UX)
 
@@ -36,7 +36,7 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to confidently provide my personal and payment information (in a safe and secure manner).
     - I want to view an order confirmation after checkout.
 
-    - I want to create my wishlist (to leave product to purchase later).
+    - I want to create my wishlist (to add and remove pruducts).
     - I want to add items to the shopping bag directly from my wishlist.
 
   - **As a site user:**
@@ -52,6 +52,8 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to add new items to my store.
     - I want to edit/update products details.
     - I want to delete items that are no longer fore sale.
+    - I want the site to be easy to navigate.
+    - I want to provide users with updates to any action.
       
 ### Design
 
@@ -65,7 +67,44 @@ The website is designed to be responsive and accessible on a range of devices, m
 
   - **Imagery**
      
-    The large background image is striking and catches the user's attention. All other images on the site are the image URLs added by users when creating their recipes.
+    The large background image on the *Home* page is striking and catches user's attention (see the context credit section below). 
+    
+    All other images on the site are the image URLs coming from the product database (see the context credit section below).
+
+- **Database**
+
+    The makeup products dataset (Herokuapp Makeup Products by Dinara Sultangulova, taken from [Kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products)) was used for creation of the e-commerce website saling makeup products. The origional JSON dataset file was modified in python shell to meet the fixtures format.
+
+    SQLite database was used during project development while Heroku Postgres was used in production.
+
+- **Models**
+
+    *UserProfile*
+
+        - The UserProfile model maintains default delivery information and order history.
+        - The UserProfile is connected to the User model created by Allauth on registration.
+
+    *Order* and *OrderLineItem*
+
+        - The Order and OrderLineItem models allow users to view their previous orders.
+        - The Order is connected to the UserProfile model.
+        - The OrderLineItem is connected to the Order and Product models .
+
+    *Category* and *Product*
+
+        - The Category model lists available product categories, allows users product filtering by category.
+        - The Product model holds key information for each product, connected to the Category model. 
+
+    *WishList* and *WishlistLineItem*
+
+        - WishList and WishlistLineItem models allow users to create there wishlist, to add/remove individual products to/from their wishlist.
+        - Creating wishlist allows users to save items for further quicker access.
+        - The WishlistLineItem model is connected to the WishList model, Product model and User model (created by Allauth on registration).
+
+    *Review*
+
+        - The Review model allows users to leave reviews on products.
+        - The Review model is connected to the UserProfile and Product models. 
 
 ### Wireframes
 
@@ -182,6 +221,8 @@ The website is designed to be responsive and accessible on a range of devices, m
 
     GitHub is used to store the project code after being pushed from GitPod.
 
+12. SQLite was used during development and then Heroku Postgres in production.
+
 12. [Google Fonts:](https://fonts.google.com/)
 
     Google fonts Roboto, Dancing Script and Courgette were used on all pages throughout the project.
@@ -194,9 +235,9 @@ The website is designed to be responsive and accessible on a range of devices, m
 
     Squoosh image editor was used to reduces file size of the images.
 
-15. [Am I responsive?:](http://ami.responsivedesign.is/)
+15. [Multi Device Website Mockup Generator:](https://techsini.com/multi-mockup/)
 
-    Am I responsive? was used to show how the website looks on different devices.
+    Multi Device Website Mockup Generator was used to show how the website looks on different devices.
 
 16. [Font Awesome:](https://fontawesome.com/)
 
@@ -236,7 +277,9 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ## Testing
 
-The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate HTML, CSS, JS and Python code, respectively, to ensure no syntax error.
+### Testing HTML, CSS, JS and Python code
+
+The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate HTML, CSS, JS and Python code, respectively, to ensure no syntax error. Please see [Here](docs/testing/manual_testing.md).
 
 - [W3C Markup Validator](https://validator.w3.org/) did not detect any errors in the HTML code on all pages of the project:
 

@@ -138,15 +138,17 @@ The website contains:
 
     - Bootstrap responsive navigation header with a collapse plugin which groups and hides navbar content;
 
-    - search functionality (to search for specific products);
+    - search functionality to search for specific products;
 
-    - filtering functionality (to sort products by category, price, brand, rating, alphabetic order);
+    - filtering functionality to sort products by category, price, brand, rating, alphabetic order);
 
     - Bootstrap toasts to provide feedback to the users when doing any action (e.g. signing in to an account, adding items to the shopping back, updaing items quantity etc.). Users can view the current items in the shopping bag, total cost and cost of delivery; 
 
-    - shopping bag functionality (to add items, update items quantity or delete items from a shopping bag);
+    - shopping bag functionality to add items, update items quantity or delete items from a shopping bag;
 
-    - checkout functionality with online test payments (via [Stripes test card details](https://stripe.com/docs/testing)).
+    - checkout functionality with online test payments (via [Stripes test card details](https://stripe.com/docs/testing));
+
+    - admin login functionality to add, edit or delete products. 
 
 Any user can:
 
@@ -166,17 +168,17 @@ The website is responsive on many device sizes (down to 320 px).
 
 ### Features Left to Implement
 
-- Recipes rating.
-
-- The possibility to leave a comment on a recipe.
-
-- Admin login functionality to edit or delete recipes added by other users (in case of incorrect or inappropriate information). At the moment, the recipes correction of other users are done by accessing the data in MongoDB.
-
-- Advertisement integration (to promote any branded product in the recipes description).
-
-- A *Scroll to top* button.
+- An introduction on the *Home* page to welcome customers and explain the purpose of the site.
 
 - *Contact* page.
+
+- Footer with social media links.
+
+- Rating functionality. The rating information currently present on the *Product Details* page comes from a dataset. For the moment, there is no functionality to collect rating input from the shoppers to eventually add them to already present rating data.
+
+- Possibility to add items to the shopping bag and wishlist from *Products* page (where all products are displayed).
+
+---
 
 ## Technologies Used
 
@@ -192,110 +194,115 @@ The website is responsive on many device sizes (down to 320 px).
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Django:](https://www.djangoproject.com/)
+1. [Django:](https://www.djangoproject.com/) 
+
+   Django web framework used to create a modular site.
+
 2. [Django-Allauth:](https://django-allauth.readthedocs.io/en/latest/index.html)
 
-    Allauth was used to handle authentication, registration and account management as well as 3rd party (social) account authentication.
+    Allauth was used to handle authentication, registration and account management.
 
-3. Stripe
+3. [Stripe:](https://stripe.com/gb)
 
-4. AWS
+    Stripe was used to handle online test payments.
 
-5. https://temp-mail.org/en/
+4. [AWS:](https://aws.amazon.com/)
 
-2. [MongoDB:](https://www.mongodb.com/)
+    AWS S3 and IAM modules were used the for storage and user access.
 
-   MongoDB was used to store recipes and users data.
-
-3. [Heroku:](https://id.heroku.com/login)
+5. [Heroku:](https://id.heroku.com/login)
 
    Heroku was used to deploy and run the application.
-   
-4. [Flask:](https://flask.palletsprojects.com/en/2.0.x/)
 
-   Flask was used as a framework to develop a web application.
-
-5. [Jinja:](https://jinja.palletsprojects.com/en/3.0.x/)
+6. [Jinja:](https://jinja.palletsprojects.com/en/3.0.x/)
 
    Jinja was used to render templates.
 
-6. [PyMongo:](https://pymongo.readthedocs.io/en/stable/)
-
-   PyMongo was used to work with MongoDB from Python.
-
-7. [Werkzeug:](https://pypi.org/project/Werkzeug/)
-
-   Werkzeug was used to generate and check password hash.
-
-8. [jQuery:](https://jquery.com/)
+7. [jQuery:](https://jquery.com/)
 
    jQuery was used in JavaScript codes to add functionality to materialize components.
 
-9. [Git:](https://git-scm.com/)
+8. [Git:](https://git-scm.com/)
 
    Git was used for version control. 
 
-10. [GitPod:](https://www.gitpod.io/)
+9. [GitPod:](https://www.gitpod.io/)
 
     GitPod was used as an IDE platform for website realization.
 
-11. [GitHub:](https://github.com/)
+10. [GitHub:](https://github.com/)
 
     GitHub is used to store the project code after being pushed from GitPod.
 
-12. SQLite was used during development and then Heroku Postgres in production.
+11. [SQLite:](https://www.sqlite.org/index.html
 
-12. [Google Fonts:](https://fonts.google.com/)
+    SQLite was used as a database during project development.
+    
+12. [Heroku Postgres:](https://www.heroku.com/postgres)
 
-    Google fonts Roboto, Dancing Script and Courgette were used on all pages throughout the project.
+    Heroku Postgres was used as a relational database for the deployed version.
 
-13. [Balsamiq:](https://balsamiq.com/)
+13. [Google Fonts:](https://fonts.google.com/)
+
+    Google fonts Roboto and Playfair Display were used on all pages throughout the project.
+
+14. [Bootstrap:](https://getbootstrap.com/)
+
+    Grid System to make the site responsive,
+
+    Navbar to make a responsive navigation header,
+
+    Cards components for displaying recipes.
+
+15. [Balsamiq:](https://balsamiq.com/)
 
     Balsamiq was used to create wireframes during the design process.
 
-14. [Squoosh:](https://squoosh.app/editor)
-
-    Squoosh image editor was used to reduces file size of the images.
-
-15. [Multi Device Website Mockup Generator:](https://techsini.com/multi-mockup/)
+16. [Multi Device Website Mockup Generator:](https://techsini.com/multi-mockup/)
 
     Multi Device Website Mockup Generator was used to show how the website looks on different devices.
 
-16. [Font Awesome:](https://fontawesome.com/)
+17. [Font Awesome:](https://fontawesome.com/)
 
     Font Awesome was used to add icons.
 
-17. [AutoPrefixer:](https://autoprefixer.github.io/)
+18. [AutoPrefixer:](https://autoprefixer.github.io/)
 
     AutoPrefixer was used to add vendor prefixes to a CSS code.
 
-18. [Beautifier:](https://beautifier.io/) 
+19. [Beautifier:](https://beautifier.io/) 
 
     Beautifier was used to format code in a consistent and readable way.
 
-19. [W3C Markup Validator](https://validator.w3.org/)
+20. [W3C Markup Validator:](https://validator.w3.org/)
 
     W3C Markup Validator was used to check the markup validity of Web documents in HTML.
 
-20. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+21. [W3C CSS Validator:](https://jigsaw.w3.org/css-validator/)
  
     W3C CSS Validator was used to check the markup validity of Web documents in CSS.
 
-21. [JSHint](https://jshint.com/)
+22. [JSHint:](https://jshint.com/)
 
     JSHint was used to detect errors and potential problems in JavaScript code.
 
-22. [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+23. [Chrome DevTools:](https://developer.chrome.com/docs/devtools/)
 
     Chrome DevTools was used to inspect and modify the website code.
 
-23. [PEP8 online](http://pep8online.com/)
+24. [PEP8 online:](http://pep8online.com/)
 
     PEP8 online was used to check a code for PEP8 requirements.
 
-24. [Black Playground](https://black.vercel.app/)
+25. [Black Playground:](https://black.vercel.app/)
 
     Black Playground was used to format the Python code.
+
+26. [TEMPMAIL:](https://temp-mail.org/en/)
+
+    TEMPMAIL was used to receive email at a temporary e-mail address.
+
+---
 
 ## Testing
 

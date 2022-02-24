@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* Code credit: the code is written following the Code Institute tutorials (Boutique Ado Project). */
 
 html {
@@ -19,9 +26,15 @@ body {
 
 /* from Bulma */
 .icon {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -124,6 +137,22 @@ a.category-badge>span.badge:hover {
     cursor: pointer;
 }
 
+input[name='q']::-webkit-input-placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']::-moz-placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']:-ms-input-placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']::-ms-input-placeholder {
+    color: #aab7c4;
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -163,7 +192,8 @@ input[name='q']::placeholder {
 .img-height {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /* Slightly larger container on xl screens */
@@ -186,6 +216,22 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
+}
+
+.allauth-form-inner-content input::-webkit-input-placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content input::-moz-placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content input:-ms-input-placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content input::-ms-input-placeholder {
+    color: #aab7c4;
 }
 
 .allauth-form-inner-content input::placeholder {
@@ -211,7 +257,11 @@ input[name='q']::placeholder {
     line-height: 1.5;
     border-radius: 0.25rem;
     /* standard bootstrap btn transitions */
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
@@ -348,6 +398,8 @@ select,
     position: absolute;
     right: 20px;
     bottom: -6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 24px;
 }
@@ -361,6 +413,8 @@ select,
     position: absolute;
     left: 4.8px;
     bottom: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -375,6 +429,8 @@ select,
     right: 15px;
     bottom: 0;
     top: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -389,6 +445,8 @@ select,
         right: 15px;
         bottom: auto;
         top: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }

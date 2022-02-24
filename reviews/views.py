@@ -19,27 +19,31 @@ def add_review(request, product_id):
     """
     product = get_object_or_404(Product, pk=product_id)
     user = get_object_or_404(UserProfile, user=request.user)
-    if request.method == 'POST':
+    if request.method == "POST":
         form = ReviewForm(request.POST)
         if form.is_valid():
-            title = form.cleaned_data['title']
-            description = form.cleaned_data['description']
+            title = form.cleaned_data["title"]
+            description = form.cleaned_data["description"]
             Review.objects.create(
                 user=user,
                 product=get_object_or_404(Product, pk=product_id),
                 title=title,
-                description=description)
-            messages.success(request, 'Successfully added review.')
-            return redirect(reverse('product_detail', args=[product_id]))
+                description=description,
+            )
+            messages.success(request, "Successfully added review.")
+            return redirect(reverse("product_detail", args=[product_id]))
         else:
-            messages.error(request, 'Failed to add review. \
-                    Please check the form is valid and try again.')
+            messages.error(
+                request,
+                "Failed to add review. \
+                    Please check the form is valid and try again.",
+            )
     else:
         form = ReviewForm()
-    template = 'reviews/add_review.html'
+    template = "reviews/add_review.html"
     context = {
-        'form': form,
-        'product': product,
+        "form": form,
+        "product": product,
     }
 
     return render(request, template, context)
@@ -51,17 +55,19 @@ def edit_review(request, review_id):
     Edit a review to a product
     """
     review = get_object_or_404(Review, pk=review_id)
-    if request.method == 'POST':
+    if request.method == "POST":
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully edited review.')
+            messages.success(request, "Successfully edited review.")
         else:
-            messages.error(request, 'Failed to edit review. \
-                    Please check the form is valid and try again.')
+            messages.error(
+                request,
+                "Failed to edit review. \
+                    Please check the form is valid and try again.",
+            )
     else:
         form = ReviewForm(instance=review)
-
     template = "reviews/edit_review.html"
     context = {
         "form": form,
@@ -79,5 +85,5 @@ def delete_review(request, review_id):
     """
     review = get_object_or_404(Review, pk=review_id)
     review.delete()
-    messages.success(request, 'Review deleted!')
-    return redirect(reverse('product_detail', args=(review.product.id,)))
+    messages.success(request, "Review deleted!")
+    return redirect(reverse("product_detail", args=(review.product.id,)))

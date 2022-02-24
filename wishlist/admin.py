@@ -13,9 +13,9 @@ class WishlistLineItemAdminInline(admin.TabularInline):
 class WishlistAdmin(admin.ModelAdmin):
     inlines = (WishlistLineItemAdminInline,)
 
-    fields = ('user',)
+    fields = ("user",)
 
-    list_display = ('user',)
+    list_display = ("user",)
 
 
 admin.site.register(Wishlist, WishlistAdmin)

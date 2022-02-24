@@ -8,6 +8,8 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ![Responsive Design](docs/images/responsive-design.jpg)
 
+---
+
 ## User Experience (UX)
 
 ### User stories
@@ -124,23 +126,43 @@ The website is designed to be responsive and accessible on a range of devices, m
 
   - *Sign Up* page - [View](docs/wireframes/sign-up-page.pdf)
 
+---
+
 ## Features
 
 ### Existing Features
 
-- The website is responsive on many device sizes (down to 320 px).
+The website contains:
 
-- The website allows users to Create, Read, Update and Delete recipes. This displays full CRUD functionality.
+    - several pages including *Home*, *Products*, *Product Details*, *Shopping Bag*, *Wishlist*, *Checkout*, *Add a Product*, *Add a Review* pages and others. This thematic division facilitates the website navigation;
 
-- Any user can:
+    - Bootstrap responsive navigation header with a collapse plugin which groups and hides navbar content;
 
-  - register an account,
-  - log in as an existing user,
-  - log out,
-  - view his profile page with a list of recipes that have been added,
-  - view, edit and delete recipes,
-  - search recipes,
-  - see which user has created any particular recipe.
+    - search functionality (to search for specific products);
+
+    - filtering functionality (to sort products by category, price, brand, rating, alphabetic order);
+
+    - Bootstrap toasts to provide feedback to the users when doing any action (e.g. signing in to an account, adding items to the shopping back, updaing items quantity etc.). Users can view the current items in the shopping bag, total cost and cost of delivery; 
+
+    - shopping bag functionality (to add items, update items quantity or delete items from a shopping bag);
+
+    - checkout functionality with online test payments (via [Stripes test card details](https://stripe.com/docs/testing)).
+
+Any user can:
+
+    - register an account,
+
+    - log in as an existing user,
+
+    - log out,
+
+    - view his profile, add delivery information and check previous orders,
+
+    - create a wishlist, add or delete products from the wishlist,
+
+    - leave a review on a product, view reviews left by other users. 
+
+The website is responsive on many device sizes (down to 320 px).
 
 ### Features Left to Implement
 

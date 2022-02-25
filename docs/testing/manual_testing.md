@@ -90,3 +90,87 @@ Additional testing:
 - If the user, trying to log in, enters an incorrect username or/and password, the warning message appears.
 
     <img src="images/manual_testing/incorrect_username_or_password.jpg" alt="Message that username or/and password are incorrect." width="300px" height="auto">
+
+---
+
+**Admin session funzionality**
+
+Admin session funzionality testing is described in the *As a store owner* section of [user stories testing](testing_user_stories.md).
+
+---
+
+**Search and sorting/filtering functionality**
+
+Search and sorting/filtering functionality is described in the *As a shopper* section of [user stories testing](testing_user_stories.md).
+
+---
+
+**Defensive design**
+
+
+---
+
+**Further Testing**
+
+- The Website was tested on Google Chrome, Mozilla Firefox and Microsoft Edge browsers.
+
+- The screen sizes and devices tested in Chrome DevTools include:
+
+    - 1920 x 1080 
+    - 1600 x 992
+    - 1440 x 900
+    - 1366 x 768
+    - Nexus 10 (800 x 1280)
+    - iPad (768 x 1024)
+    - Surface Duo (540 x 720)
+    - iPhone 6/7/8 Plus (414 x 736)
+    - Pixel 2 (411 x 731)
+    - iPhone 6/7/8 (375 x 667)
+    - Nexus 4 (384 x 640)
+    - iPhone X (375 x 812)
+    - Galaxy S5 (360 x 640)
+    - iPhone 5/SE (320 x 568)
+
+- Devices physically tested include:
+
+  - Desktop 
+  - Laptop
+  - iPhoneXR 
+  - Huawei Mate 20 
+    
+**Bugs**
+
+### Fixed bugs
+
+1. On the *Shopping bag* page, disabling +/- buttons outside 1-99 range did not work for products who had color names consisting of more than one word. For example, in the image below, one can notice that all products that have one-word color name (or no colors) have a disactivated minus button when the quantity is equal to 1. While products with color names, consisting of several words with spaces between them, have active minus buttons and can go to negative quantity values.
+
+    <img src="images/bugs/color_quantity_bug.jpg" alt="Disabling +/- buttons outside 1-99 range bug." width="600px" height="auto">
+
+    The problem was solved by [cutting](https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#cut) spaces from color names: by substituting `{{ item.color }}` with `{{ item.color|cut:' ' }}` in quantity-form.html.
+
+2. On the *Product details* page, it was not possible to display icons inside select options tag (it was not possible to use an <i> tag):
+
+    ```
+    <option value="{{ color.colour_name }}"><i class='fas fa-square-full'></i> {{ color.colour_name }}"</option>
+    ```
+    The solution was found [Here](https://stackoverflow.com/questions/48508431/how-to-add-font-awesome-icons-in-select-options).
+
+    I have set the font family on the select to font awesome:
+    ```
+    select {
+      font-family: 'FontAwesome'
+    }
+    ```
+    and used character points for the square icon `&#xf45c;`:
+    ```
+    <option style="color: {{ color.hex_value }};" value="{{ color.colour_name }}">&#xf45c; {{ color.colour_name }}</option>
+    ```
+    This solution works fine in Google Chrome and Microsoft Edge browser, while in Mozilla Firefox, squared icons are not displayed properly. 
+
+    <img src="images/bugs/select_option_colors_bug.jpg" alt="Icons inside select options tag in different browsers." width="400px" height="auto">
+
+### Existing bugs
+
+1. On the *Product details* page, in select options tags, the first option displayed text is in grey color. In addition, when color options are opened in a dropdown menu, the text on hover becomes white with blue background. 
+
+    <img src="images/bugs/grey_text_color_option_bug.jpg" alt="Bug in option select tag." width="200px" height="auto">

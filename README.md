@@ -314,66 +314,6 @@ Please see [Here](docs/testing/testing_user_stories.md) the user stories testing
 **Testing Functionality, Usability and Responsiveness**
 
 The manual testing is described [Here](docs/testing/manual_testing.md).
-
-**Further Testing**
-
-- The Website was tested on Google Chrome, Mozilla Firefox and Microsoft Edge browsers.
-
-- The screen sizes and devices tested in Chrome DevTools include:
-
-    - 1920 x 1080 
-    - 1600 x 992
-    - 1440 x 900
-    - 1366 x 768
-    - Nexus 10 (800 x 1280)
-    - iPad (768 x 1024)
-    - Surface Duo (540 x 720)
-    - iPhone 6/7/8 Plus (414 x 736)
-    - Pixel 2 (411 x 731)
-    - iPhone 6/7/8 (375 x 667)
-    - Nexus 4 (384 x 640)
-    - iPhone X (375 x 812)
-    - Galaxy S5 (360 x 640)
-    - iPhone 5/SE (320 x 568)
-
-- Devices physically tested include:
-
-  - Desktop 
-  - Laptop
-  - iPhoneXR 
-  - Huawei Mate 20 
-    
-**Bugs**
-
-### Fixed bugs
-
-1. On the *Shopping bag* page, disabling +/- buttons outside 1-99 range did not work for products who had color names consisting of more than one word. For example, in the image below, one can notice that all products that have one-word color name (or no colors) have a disactivated minus button when the quantity is equal to 1. While products with color names, consisting of several words with spaces between them, have active minus buttons and can go to negative quantity values.
-
-    <img src="docs/testing/images/bugs/color_quantity_bug.jpg" alt="Disabling +/- buttons outside 1-99 range bug." width="600px" height="auto">
-
-    The problem was solved by [cutting](https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#cut) spaces from color names: by substituting `{{ item.color }}` with `{{ item.color|cut:' ' }}` in quantity-form.html.
-
-2. On the *Product details* page, it was not possible to display icons inside select options tag (it was not possible to use an <i> tag):
-
-    ```
-    <option value="{{ color.colour_name }}"><i class='fas fa-square-full'></i> {{ color.colour_name }}"</option>
-    ```
-    The solution was found [Here](https://stackoverflow.com/questions/48508431/how-to-add-font-awesome-icons-in-select-options).
-
-    I have set the font family on the select to font awesome:
-    ```
-    select {
-      font-family: 'FontAwesome'
-    }
-    ```
-    and used character points for the square icon `&#xf45c;`:
-    ```
-    <option style="color: {{ color.hex_value }};" value="{{ color.colour_name }}">&#xf45c; {{ color.colour_name }}</option>
-    ```
-
-### Existing bugs
-
-1. 
         
 ## Deployment
 

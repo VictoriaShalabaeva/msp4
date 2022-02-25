@@ -42,13 +42,12 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 **As a site user:**
     
-    - I want to easily register for an account and be able to view my profile.
-    - I want to easily login and logout.
+    - I want to easily register for an account and receive an email confirmation.
+    - I want to easily login/logout and to view my profile.
     - I want to easily recover my password in case I forget it.
-    - I want to receive a email confirmation after registering to verify that my account registration was successful.
-    - I want to view my personal order history and save my payment information. 
+    - I want to view my personal order history and save my delivery information.
 
-**As a store Owner:**
+**As a store owner:**
 
     - I want to add new items to my store.
     - I want to edit/update products details.

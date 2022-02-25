@@ -127,3 +127,78 @@
 
 ---
 
+**As a site user, I want to easily register for an account and receive an email confirmation.**
+
+- A user can click on *Register* on *My Account* tab on the navigation bar.
+
+  <img src="images/user_stories/register_btn.jpg" alt="Register tab." width="200px" height="auto">
+
+- A user can view *Sign Up* page and fill a form.
+
+  <img src="images/user_stories/signup.jpg" alt="Sign Up page." width="400px" height="auto">
+
+- After form submission, a user will receive a confirmation email.
+
+  <img src="images/user_stories/confirmation_email.jpg" alt="Confirmation email." width="500px" height="auto">
+
+- A user should check his email and open the link to view a *Confirm Email Address* page.
+
+  <img src="images/user_stories/confirm_email_address.jpg" alt="Confirm email address page." width="500px" height="auto">
+
+- After a user clicks *Confirm* button, he will be redirected to *Sign In* page and view the sucssess info message.
+
+  <img src="images/user_stories/success_confirmation.jpg" alt="Successful email confirmation." width="500px" height="auto">
+
+**As a site user, I want to easily login/logout and to view my profile.**
+
+- A user can click on *Login* on *My Account* tab on the navigation bar.
+
+  <img src="images/user_stories/login.jpg" alt="Login tab." width="200px" height="auto">
+
+- A user can view *Sign In* page and fill a form with his email address and password.
+
+  <img src="images/user_stories/signin.jpg" alt="Sign Ip page." width="400px" height="auto">
+
+- After signing in, a user is redirected to *My Account* page.
+
+  <img src="images/user_stories/my_account_page.jpg" alt="My Account page." width="400px" height="auto">
+
+- A user can logout by clicking *Logout* button on *My Account* tab on the navigation bar.
+
+  <img src="images/user_stories/logout.jpg" alt="Logout tab." width="400px" height="auto">
+
+- A user can view *Sign Out* page and click *Sign Out*.
+
+  <img src="images/user_stories/signout.jpg" alt="Sign Out page." width="200px" height="auto">  
+
+**As a site user, I want to easily recover my password in case I forget it.**
+
+- On the *Sign In* page, a user can click on *Forgot password* in case he forgot it. 
+
+  <img src="images/user_stories/reset_password_page.jpg" alt="Reset password page." width="200px" height="auto"> 
+
+- After filling in an email address, an email with a link to reset password will be sent.
+
+  <img src="images/user_stories/reset_password_email.jpg" alt="Reset password email." width="200px" height="auto"> 
+
+- After clicking a link received by email, a user is redirected to *Change Password* page.
+
+  <img src="images/user_stories/change_password.jpg" alt="Change Password page." width="200px" height="auto"> 
+
+- After a user has submitted a new password for his accoun, he will view a successful info message. by clicking on *Set Password*, he will be redirected to *Sign In* page.
+
+  <img src="images/user_stories/password_change_successful.jpg" alt="Password changed successfully." width="500px" height="auto"> 
+
+**As a site user, I want to view my personal order history and save my delivery information.** 
+
+- On *My Profile* page, a user can view his order history and update his delivery information.
+
+  <img src="images/user_stories/delivery_info_and_order_history.jpg" alt="Delivery information and order history on My Profile page." width="500px" height="auto">
+
+---
+
+**As a store owner, I want to add new items to my store.**
+**As a store owner, I want to edit/update products details.**
+**As a store owner, I want to delete items that are no longer fore sale.**
+**As a store owner, I want the site to be easy to navigate.**
+**As a store owner, I want to provide users with updates to any action.**

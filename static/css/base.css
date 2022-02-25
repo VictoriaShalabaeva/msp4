@@ -455,7 +455,7 @@ select,
     border: 1px solid transparent;
 }
 
-@media (max-width: 340px) {
+@media (max-width: 390px) {
     .navbar-toggler {
         padding: 0.1rem 0.1rem;
         font-size: 0.6rem;

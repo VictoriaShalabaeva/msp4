@@ -43,7 +43,7 @@
 
   - After a review submission, a shopper can edit (or delete) his reviews by clicking on *Edit* (or *Delete*) buttons available at the bottom of each review. Upon clicking on *Edit* button, a shopper is redirected to a *Edit Review* page to resubmite a form. If *Delete* button is clicked, the review is deleted and an info message is shown.
 
-  <img src="images/user_stories/edit_review.jpg" alt="Edit Review page." width="500px" height="auto">
+    <img src="images/user_stories/edit_review.jpg" alt="Edit Review page." width="500px" height="auto">
 
 **As a shopper, I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.**
 
@@ -99,27 +99,27 @@
   
   - A shopper can view a summery of his order. 
 
-  <img src="images/user_stories/checkout_page.jpg" alt="Checkout page." width="500px" height="auto">
+    <img src="images/user_stories/checkout_page.jpg" alt="Checkout page." width="500px" height="auto">
   
   - The payment information is on the bottom of the page, the validation is done via Stripe. Clicking *Complete Order* button will display an overlay with a spinning icon while the payment is processed. 
 
-  <img src="images/user_stories/overlay.jpg" alt="Overlay with a spinning icon while the payment is processed." width="500px" height="auto">
+    <img src="images/user_stories/overlay.jpg" alt="Overlay with a spinning icon while the payment is processed." width="500px" height="auto">
 
 **As a shopper, I want to view an order confirmation after checkout.**
 
 - A user can view the *Checkout Success* page with a success info message on the top right corner of the page, summary of his order and delivery information. A user also receives a confirmation email on his order.
 
-  <img src="images/user_stories/complete_order.jpg" alt="Checkout Success page." width="500px" height="auto">
+    <img src="images/user_stories/complete_order.jpg" alt="Checkout Success page." width="500px" height="auto">
 
 **As a shopper, I want to create my wishlist (to add and remove products).**
 
 - On the *Product Details* page, a logged in user can view a button *Add to Wishlist*. When clicking this button, products are added to the user's wishlist. When products are added to a wishlist the button becomes *Remove from Wishlist*. 
 
-  <img src="images/user_stories/add_to_wishlist_btn.jpg" alt="Add to Wishlist button on Product Details page." width="500px" height="auto">
+    <img src="images/user_stories/add_to_wishlist_btn.jpg" alt="Add to Wishlist button on Product Details page." width="500px" height="auto">
 
 - In order to access a wishlist, a user can click on the *heart* icon on the navigation bar. The page with a wishlist will list all added products. Products can be removed from wishlist also by clicking *Remove* button.
 
-  <img src="images/user_stories/wishlist_page.jpg" alt="Wishlist page." width="500px" height="auto">
+    <img src="images/user_stories/wishlist_page.jpg" alt="Wishlist page." width="500px" height="auto">
 
 **As a shopper, I want to add items to the shopping bag directly from my wishlist.**
 
@@ -131,11 +131,11 @@
 
 - A user can click on *Register* on *My Account* tab on the navigation bar.
 
-  <img src="images/user_stories/register_btn.jpg" alt="Register tab." width="200px" height="auto">
+    <img src="images/user_stories/register_btn.jpg" alt="Register tab." width="200px" height="auto">
 
 - A user can view *Sign Up* page and fill a form.
 
-  <img src="images/user_stories/signup.jpg" alt="Sign Up page." width="400px" height="auto">
+    <img src="images/user_stories/signup.jpg" alt="Sign Up page." width="400px" height="auto">
 
 - After form submission, a user will receive a confirmation email.
 
@@ -143,62 +143,88 @@
 
 - A user should check his email and open the link to view a *Confirm Email Address* page.
 
-  <img src="images/user_stories/confirm_email_address.jpg" alt="Confirm email address page." width="500px" height="auto">
+    <img src="images/user_stories/confirm_email_address.jpg" alt="Confirm email address page." width="500px" height="auto">
 
 - After a user clicks *Confirm* button, he will be redirected to *Sign In* page and view the sucssess info message.
 
-  <img src="images/user_stories/success_confirmation.jpg" alt="Successful email confirmation." width="500px" height="auto">
+    <img src="images/user_stories/success_confirmation.jpg" alt="Successful email confirmation." width="500px" height="auto">
 
 **As a site user, I want to easily login/logout and to view my profile.**
 
 - A user can click on *Login* on *My Account* tab on the navigation bar.
 
-  <img src="images/user_stories/login.jpg" alt="Login tab." width="200px" height="auto">
+    <img src="images/user_stories/login_btn.jpg" alt="Login tab." width="200px" height="auto">
 
 - A user can view *Sign In* page and fill a form with his email address and password.
 
-  <img src="images/user_stories/signin.jpg" alt="Sign Ip page." width="400px" height="auto">
+    <img src="images/user_stories/signin.jpg" alt="Sign Ip page." width="300px" height="auto">
 
-- After signing in, a user is redirected to *My Account* page.
+- After signing in, a user is redirected to *My Profile* page.
 
-  <img src="images/user_stories/my_account_page.jpg" alt="My Account page." width="400px" height="auto">
+    <img src="images/user_stories/my_account_page.jpg" alt="My Profile page." width="400px" height="auto">
 
 - A user can logout by clicking *Logout* button on *My Account* tab on the navigation bar.
 
-  <img src="images/user_stories/logout.jpg" alt="Logout tab." width="400px" height="auto">
+    <img src="images/user_stories/logout_btn.jpg" alt="Logout tab." width="200px" height="auto">
 
 - A user can view *Sign Out* page and click *Sign Out*.
 
-  <img src="images/user_stories/signout.jpg" alt="Sign Out page." width="200px" height="auto">  
+    <img src="images/user_stories/signout.jpg" alt="Sign Out page." width="200px" height="auto">  
 
 **As a site user, I want to easily recover my password in case I forget it.**
 
 - On the *Sign In* page, a user can click on *Forgot password* in case he forgot it. 
 
-  <img src="images/user_stories/reset_password_page.jpg" alt="Reset password page." width="200px" height="auto"> 
+    <img src="images/user_stories/reset_password_page.jpg" alt="Reset password page." width="200px" height="auto"> 
 
 - After filling in an email address, an email with a link to reset password will be sent.
 
-  <img src="images/user_stories/reset_password_email.jpg" alt="Reset password email." width="200px" height="auto"> 
+    <img src="images/user_stories/reset_password_email.jpg" alt="Reset password email." width="200px" height="auto"> 
 
 - After clicking a link received by email, a user is redirected to *Change Password* page.
 
-  <img src="images/user_stories/change_password.jpg" alt="Change Password page." width="200px" height="auto"> 
+    <img src="images/user_stories/change_password.jpg" alt="Change Password page." width="200px" height="auto"> 
 
 - After a user has submitted a new password for his accoun, he will view a successful info message. by clicking on *Set Password*, he will be redirected to *Sign In* page.
 
-  <img src="images/user_stories/password_change_successful.jpg" alt="Password changed successfully." width="500px" height="auto"> 
+    <img src="images/user_stories/password_change_successful.jpg" alt="Password changed successfully." width="500px" height="auto"> 
 
 **As a site user, I want to view my personal order history and save my delivery information.** 
 
 - On *My Profile* page, a user can view his order history and update his delivery information.
 
-  <img src="images/user_stories/delivery_info_and_order_history.jpg" alt="Delivery information and order history on My Profile page." width="500px" height="auto">
+    <img src="images/user_stories/delivery_info_and_order_history.jpg" alt="Delivery information and order history on My Profile page." width="500px" height="auto">
 
 ---
 
 **As a store owner, I want to add new items to my store.**
+
+- When logged in as an admin, a user can view an additional link to a *Product Management* page (equivalent to *Add a Product* page) on the *My Account* tab.
+
+    <img src="images/user_stories/product_management_btn.jpg" alt="Product Management button." width="200px" height="auto">
+
+- A store owner can add a new product by filling in a form.
+
+    <img src="images/user_stories/add_product_page.jpg" alt="Product Management page." width="300px" height="auto">
+
 **As a store owner, I want to edit/update products details.**
+
+- A store owner can edit product details by clicking on *Edit* button either from *Products* page or from individual *Product Details* page.
+
+    <img src="images/user_stories/edit_btn.jpg" alt="Edit product button." width="500px" height="auto">
+
+- On the *Edit a Product* page, a store owner will see a prefilled form. He can make a changes to the fields and save changes.
+
+    <img src="images/user_stories/edit_product_page.jpg" alt="Edit product page." width="300px" height="auto">
+
 **As a store owner, I want to delete items that are no longer fore sale.**
-**As a store owner, I want the site to be easy to navigate.**
+
+- A store owner can delete products by clicking on *Delete* button either from *Products* page or from individual *Product Details* page. Please see image related to *Edit* button (above).
+
+- When *Delete* button is pressed, a message will appear informing that the product was deleted. It would be useful to implement a popup window with a question whether a store owner is sure to delete a product. This is left as a future feature to apply.
+
+    <img src="images/user_stories/product_deleted_message.jpg" alt="Product deleted message." width="200px" height="auto">
+
 **As a store owner, I want to provide users with updates to any action.**
+
+- Whatever action is performed by any user (whether it is a customer or a store owner), the user is always notified with info messages appearing on the right top of the page. The examples of such messages can be seen above in several images throughtout the present document.

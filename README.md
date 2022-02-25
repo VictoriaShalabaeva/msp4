@@ -52,7 +52,6 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to add new items to my store.
     - I want to edit/update products details.
     - I want to delete items that are no longer fore sale.
-    - I want the site to be easy to navigate.
     - I want to provide users with updates to any action.
       
 ### Design
@@ -128,7 +127,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ## Features
 
-### Existing Features
+**Existing Features**
 
 The website contains:
 
@@ -164,7 +163,7 @@ Any user can:
 
 The website is responsive on many device sizes (down to 320 px).
 
-### Features Left to Implement
+**Features Left to Implement**
 
 - An introduction on the *Home* page to welcome customers and explain the purpose of the site.
 
@@ -180,7 +179,7 @@ The website is responsive on many device sizes (down to 320 px).
 
 ## Technologies Used
 
-### Languages Used
+**Languages Used**
 
 - HTML5
 
@@ -190,7 +189,7 @@ The website is responsive on many device sizes (down to 320 px).
 
 - JavaScript
 
-### Frameworks, Libraries & Programs Used
+**Frameworks, Libraries & Programs Used**
 
 1. [Django:](https://www.djangoproject.com/) 
 
@@ -304,19 +303,19 @@ The website is responsive on many device sizes (down to 320 px).
 
 ## Testing
 
-### Testing HTML, CSS, JS and Python code
+**Testing HTML, CSS, JS and Python code**
 
 The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate HTML, CSS, JS and Python code, respectively, to ensure no syntax error. Please see results [Here](docs/testing/validators_testing.md).
 
-### Testing User Stories from User Experience (UX) Section
+**Testing User Stories from User Experience (UX) Section**
 
 Please see [Here](docs/testing/testing_user_stories.md) the user stories testing with corresponding screenshots.
 
-### Testing Functionality, Usability and Responsiveness
+**Testing Functionality, Usability and Responsiveness**
 
 The manual testing is described [Here](docs/testing/manual_testing.md).
 
-### Further Testing
+**Further Testing**
 
 - The Website was tested on Google Chrome, Mozilla Firefox and Microsoft Edge browsers.
 
@@ -344,9 +343,9 @@ The manual testing is described [Here](docs/testing/manual_testing.md).
   - iPhoneXR 
   - Huawei Mate 20 
     
-### Bugs
+**Bugs**
 
-#### Fixed bugs
+### Fixed bugs
 
 1. On the *Shopping bag* page, disabling +/- buttons outside 1-99 range did not work for products who had color names consisting of more than one word. For example, in the image below, one can notice that all products that have one-word color name (or no colors) have a disactivated minus button when the quantity is equal to 1. While products with color names, consisting of several words with spaces between them, have active minus buttons and can go to negative quantity values.
 
@@ -372,7 +371,7 @@ The manual testing is described [Here](docs/testing/manual_testing.md).
     <option style="color: {{ color.hex_value }};" value="{{ color.colour_name }}">&#xf45c; {{ color.colour_name }}</option>
     ```
 
-#### Existing bugs
+### Existing bugs
 
 1. 
         

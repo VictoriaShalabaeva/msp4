@@ -77,23 +77,11 @@ def product_detail(request, product_id):
     color = None
     if "product_color" in request.POST:
         color = request.POST["product_color"]
-    product_wishlisted = False
-    if request.user.is_authenticated:
-        user_wishlist, _ = Wishlist.objects.get_or_create(user=request.user)
-
-        if color:
-            product_wishlisted = WishlistLineItem.objects.filter(
-                wishlist=user_wishlist, product=product, product_color=color
-            ).exists()
-        else:
-            product_wishlisted = WishlistLineItem.objects.filter(
-                wishlist=user_wishlist, product=product
-            ).exists()
+    
     context = {
         "product": product,
         "reviews": reviews,
         "review_form": review_form,
-        "product_wishlisted": product_wishlisted,
     }
 
     return render(request, "products/product_detail.html", context)

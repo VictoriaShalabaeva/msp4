@@ -115,13 +115,23 @@
 
 **I want to create my wishlist (to add and remove products).**
 
-- On the *Product Details* page, a logged in user can view a button *Add to Wishlist*. When clicking this button, products are added to the user's wishlist. When products are added to a wishlist the button becomes *Remove from Wishlist*. 
+- On the *Product Details* page, a logged in user can view a button *Add to Wishlist* (not logged in users can't view this button). When clicking this button, products are added to the user's wishlist. 
 
-    <img src="images/user_stories/add_to_wishlist_btn.jpg" alt="Add to Wishlist button on Product Details page." width="500px" height="auto">
+  <img src="images/user_stories/add_to_wishlist_btn_2.jpg" alt="Add to Wishlist button on Product Details page." width="500px" height="auto">
 
-- In order to access a wishlist, a user can click on the *heart* icon on the navigation bar. The page with a wishlist will list all added products. Products can be removed from wishlist also by clicking *Remove* button.
+- It is possible to add several colors of the same product to a wishlist.  
+
+    <img src="images/user_stories/different_colors_in_wishlist.jpg" alt="Different colors of the same product in Wishlist." width="500px" height="auto">
+
+- If a user tries to add the same item to a wishlist (the same product with the same color), he will see a warning message that the product is already in his wishlist.
+
+  <img src="images/user_stories/add_to_wishlist_btn_and_warning_message" alt="Warning message that product is already in Wishlist." width="500px" height="auto">
+
+- In order to access a wishlist, a user can click on the *heart* icon on the navigation bar. The page with a wishlist will list all added products. Products can be removed from wishlist by clicking *Remove* button.
 
     <img src="images/user_stories/wishlist_page.jpg" alt="Wishlist page." width="500px" height="auto">
+
+- If a not logged in user clicks the heart icon on the navigation bar, he will be redirected to *Sign In* page.
 
 **I want to add items to the shopping bag directly from my wishlist.**
 

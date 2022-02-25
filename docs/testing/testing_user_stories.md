@@ -1,6 +1,8 @@
 # Testing User Stories from User Experience (UX) Section
 
-**As a shopper, I want to view a list of products and select some to purchase.**
+### **As a shopper**:
+
+ **I want to view a list of products and select some to purchase.**
   
   - A shopper can click the links in the navigation bar or on the button *Shop Now* and be redirected to the corresponding products page. 
 
@@ -11,13 +13,13 @@
     <img src="images/user_stories/list_of_products.jpg" alt="All products." width="500px" height="auto">
 
 
-**As a shopper, I want to view individual products details and identify the price, description, product rating, product image and available colors.** 
+**I want to view individual products details and identify the price, description, product rating, product image and available colors.** 
 
   - A shopper can click on the product of interest and be redirected to a *Products Details* page. Here he will find more detailed information on a specific product.
 
     <img src="images/user_stories/product_details.jpg" alt="Product details page." width="500px" height="auto">
 
-**As a shopper, I want to easily select the color and quantity of a product when purchasing it.**
+**I want to easily select the color and quantity of a product when purchasing it.**
 
   - In the *Products Details" page, a shopper can select a color and quantity of each product.
 
@@ -27,49 +29,49 @@
 
     <img src="images/user_stories/product_quantity_in_shopping_bag.jpg" alt="Product quantity on the shopping bag page." width="500px" height="auto">
 
-**As a shopper, I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).**
+**I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).**
 
   - Before taking a decision on purchasing any products, a shopper can read reviews on a specific product left by other users."
 
     <img src="images/user_stories/reviews.jpg" alt="Product reviews." width="500px" height="auto">
 
-**As a shopper, I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.**
+**I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.**
 
   - On the *Product detailes* page, a shopper can click on a *Add a Review* button to write a review (see image with a *Add a Review* button above). When clicking the button, a shopper can write a review by filling in a form.
 
     <img src="images/user_stories/add_review.jpg" alt="Add Review page." width="200px" height="auto">
 
-**As a shopper, I want to be able to edit or delete my reviews (in case I change my opinion).**
+**I want to be able to edit or delete my reviews (in case I change my opinion).**
 
   - After a review submission, a shopper can edit (or delete) his reviews by clicking on *Edit* (or *Delete*) buttons available at the bottom of each review. Upon clicking on *Edit* button, a shopper is redirected to a *Edit Review* page to resubmite a form. If *Delete* button is clicked, the review is deleted and an info message is shown.
 
     <img src="images/user_stories/edit_review.jpg" alt="Edit Review page." width="500px" height="auto">
 
-**As a shopper, I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.**
+**I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.**
 
   - Products can be sorted from the dropdown menu in the navigation bar.
 
     <img src="images/user_stories/products_sorting.jpg" alt="Product sorting from dropdown menu." width="500px" height="auto">
 
-**As a shopper, I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).**
+**I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).**
 
   - A specific category of products can chosen from the navigation bar and then be further sorted from the filter box.
 
     <img src="images/user_stories/products_sorting_filter_box.jpg" alt="Product sorting from filter box." width="500px" height="auto">
 
-**As a shopper, I want to search by name, brand or description to find a specific product I would like to purchase.**
+**I want to search by name, brand or description to find a specific product I would like to purchase.**
 
   - A shopper can search by name, brand or description to find a specific product using a search box on the top of each page.
 
     <img src="images/user_stories/search_bar.jpg" alt="Search bar." width="500px" height="auto">
 
-**As a shopper, I want to easily see what I have searched for and the number of results.**
+**I want to easily see what I have searched for and the number of results.**
 
   - A shopper can easily view a number of search results.
 
     <img src="images/user_stories/search_result.jpg" alt="Search results." width="500px" height="auto">
 
-**As a shopper, I want to view items in my bag to be purchased.**
+**I want to view items in my bag to be purchased.**
 
   - The items to be purchased can be viewed on the *Shopping Bag* page. 
 
@@ -79,17 +81,17 @@
 
     <img src="images/user_stories/info_box.jpg" alt="Info box." width="200px" height="auto">
 
-**As a shopper, I want to adjust the quantity of individual items in my bag.**
+**I want to adjust the quantity of individual items in my bag.**
 
   - The product quantuty can be adjust on the *Shopping Bag* page (please see image above).
 
-**As a shopper, I want to easily view the total of my purchases at any time to avoid spending too much.**
+**I want to easily view the total of my purchases at any time to avoid spending too much.**
 
   - A shopper can view the total of his purchases at the top right corner of each page. 
 
     <img src="images/user_stories/bag_total.jpg" alt="Bag purchases total." width="500px" height="auto">
 
-**As a shopper, I want to easily enter my payment information and check out quickly without hassles**
+**I want to easily enter my payment information and check out quickly without hassles**
 
   - A shopper can click on "Secure Checkout" button either from a *Shopping bag* page or from an info window with a shopping bag summery.
 
@@ -105,13 +107,13 @@
 
     <img src="images/user_stories/overlay.jpg" alt="Overlay with a spinning icon while the payment is processed." width="500px" height="auto">
 
-**As a shopper, I want to view an order confirmation after checkout.**
+**I want to view an order confirmation after checkout.**
 
 - A user can view the *Checkout Success* page with a success info message on the top right corner of the page, summary of his order and delivery information. A user also receives a confirmation email on his order.
 
     <img src="images/user_stories/complete_order.jpg" alt="Checkout Success page." width="500px" height="auto">
 
-**As a shopper, I want to create my wishlist (to add and remove products).**
+**I want to create my wishlist (to add and remove products).**
 
 - On the *Product Details* page, a logged in user can view a button *Add to Wishlist*. When clicking this button, products are added to the user's wishlist. When products are added to a wishlist the button becomes *Remove from Wishlist*. 
 
@@ -121,13 +123,15 @@
 
     <img src="images/user_stories/wishlist_page.jpg" alt="Wishlist page." width="500px" height="auto">
 
-**As a shopper, I want to add items to the shopping bag directly from my wishlist.**
+**I want to add items to the shopping bag directly from my wishlist.**
 
 - A user can add items to a shopping bag directly from the *Wishlist* page (see image above).
 
 ---
 
-**As a site user, I want to easily register for an account and receive an email confirmation.**
+### **As a site user:**
+
+**I want to easily register for an account and receive an email confirmation.**
 
 - A user can click on *Register* on *My Account* tab on the navigation bar.
 
@@ -149,7 +153,7 @@
 
     <img src="images/user_stories/success_confirmation.jpg" alt="Successful email confirmation." width="500px" height="auto">
 
-**As a site user, I want to easily login/logout and to view my profile.**
+**I want to easily login/logout and to view my profile.**
 
 - A user can click on *Login* on *My Account* tab on the navigation bar.
 
@@ -171,7 +175,7 @@
 
     <img src="images/user_stories/signout.jpg" alt="Sign Out page." width="200px" height="auto">  
 
-**As a site user, I want to easily recover my password in case I forget it.**
+**I want to easily recover my password in case I forget it.**
 
 - On the *Sign In* page, a user can click on *Forgot password* in case he forgot it. 
 
@@ -189,7 +193,7 @@
 
     <img src="images/user_stories/password_change_successful.jpg" alt="Password changed successfully." width="500px" height="auto"> 
 
-**As a site user, I want to view my personal order history and save my delivery information.** 
+**I want to view my personal order history and save my delivery information.** 
 
 - On *My Profile* page, a user can view his order history and update his delivery information.
 
@@ -197,7 +201,9 @@
 
 ---
 
-**As a store owner, I want to add new items to my store.**
+### **As a store owner:**
+
+**I want to add new items to my store.**
 
 - When logged in as an admin, a user can view an additional link to a *Product Management* page (equivalent to *Add a Product* page) on the *My Account* tab.
 
@@ -207,7 +213,7 @@
 
     <img src="images/user_stories/add_product_page.jpg" alt="Product Management page." width="300px" height="auto">
 
-**As a store owner, I want to edit/update products details.**
+**I want to edit/update products details.**
 
 - A store owner can edit product details by clicking on *Edit* button either from *Products* page or from individual *Product Details* page.
 
@@ -217,7 +223,7 @@
 
     <img src="images/user_stories/edit_product_page.jpg" alt="Edit product page." width="300px" height="auto">
 
-**As a store owner, I want to delete items that are no longer fore sale.**
+**I want to delete items that are no longer fore sale.**
 
 - A store owner can delete products by clicking on *Delete* button either from *Products* page or from individual *Product Details* page. Please see image related to *Edit* button (above).
 
@@ -225,6 +231,6 @@
 
     <img src="images/user_stories/product_deleted_message.jpg" alt="Product deleted message." width="200px" height="auto">
 
-**As a store owner, I want to provide users with updates to any action.**
+**I want to provide users with updates to any action.**
 
 - Whatever action is performed by any user (whether it is a customer or a store owner), the user is always notified with info messages appearing on the right top of the page. The examples of such messages can be seen above in several images throughtout the present document.

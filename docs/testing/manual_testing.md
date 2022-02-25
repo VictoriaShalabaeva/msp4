@@ -66,3 +66,27 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 - *Checkout Success* page rearranges correctly at certain breakpoints.
 
     <img src="images/manual_testing/checkout_success_page_layout.jpg" alt="Checkout Success page layout." width="600px" height="auto">
+
+---
+
+***Register*, *Log In* and *Log Out* functionality**
+
+A big part of *Register*, *Log In* and *Log Out* functionality testing is described in the *As a site user* section of [user stories testing](testing_user_stories.md).
+
+Additional testing:
+
+- The password should match a specific pattern. If the input does not match a pattern, a message appears to help users.
+
+    <img src="images/manual_testing/password_requirements.jpg" alt="The password should match a specific pattern." width="300px" height="auto">
+
+- If the user tries to register an account with the email that was already registered, the warning message appears.
+
+    <img src="images/manual_testing/user_already registered.jpg" alt="Message that email already exists." width="300px" height="auto">
+
+- If the user tries to register an account with the username that was already registered, the warning message appears.
+
+    <img src="images/manual_testing/username_already registered.jpg" alt="Message that username already exists." width="300px" height="auto">
+
+- If the user, trying to log in, enters an incorrect username or/and password, the warning message appears.
+
+    <img src="images/manual_testing/incorrect_username_or_password.jpg" alt="Message that username or/and password are incorrect." width="300px" height="auto">

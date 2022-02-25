@@ -14,7 +14,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ### User stories
 
-  - **As a shopper:**
+**As a shopper:**
 
     - I want to view a list of products and select some to purchase.
     - I want to view individual products details and identify the price, description, product rating, product image and available colors. 
@@ -41,7 +41,7 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to create my wishlist (to add and remove pruducts).
     - I want to add items to the shopping bag directly from my wishlist.
 
-  - **As a site user:**
+**As a site user:**
     
     - I want to easily register for an account and be able to view my profile.
     - I want to easily login and logout.
@@ -49,7 +49,7 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to receive a email confirmation after registering to verify that my account registration was successful.
     - I want to view my personal order history and save my payment information. 
 
-  - **As a store Owner:**
+**As a store Owner:**
 
     - I want to add new items to my store.
     - I want to edit/update products details.
@@ -59,54 +59,54 @@ The website is designed to be responsive and accessible on a range of devices, m
       
 ### Design
 
-  - **Colour Scheme**
+**Colour Scheme**
 
     The main colours used are black #000000, white #FFFFFF and red #a50f12.
 
-  - **Typography**
+**Typography**
 
     The Roboto and Playfair Display (used for Logo) fonts are the main fonts used throughout the whole website with Sans Serif and Serif as the fallback fonts in case for any reason the font isn't being imported into the site correctly. Roboto is a clean font used frequently in programming, so it is both attractive and appropriate.
 
-  - **Imagery**
+**Imagery**
      
     The large background image on the *Home* page is striking and catches user's attention (see the context credit section below). 
     
     All other images on the site are the image URLs coming from the product database (see the context credit section below).
 
-- **Database**
+**Database**
 
     The makeup products dataset (Herokuapp Makeup Products by Dinara Sultangulova, taken from [Kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products)) was used for creation of the e-commerce website saling makeup products. The origional JSON dataset file was modified in python shell to meet the fixtures format.
 
     SQLite database was used during project development while Heroku Postgres was used in production.
 
-- **Models**
+**Models**
 
-    *UserProfile*
+*UserProfile*
 
-        - The UserProfile model maintains default delivery information and order history.
-        - The UserProfile is connected to the User model created by Allauth on registration.
+    - The UserProfile model maintains default delivery information and order history.
+    - The UserProfile is connected to the User model created by Allauth on registration.
 
-    *Order* and *OrderLineItem*
+*Order* and *OrderLineItem*
 
-        - The Order and OrderLineItem models allow users to view their previous orders.
-        - The Order is connected to the UserProfile model.
-        - The OrderLineItem is connected to the Order and Product models .
+    - The Order and OrderLineItem models allow users to view their previous orders.
+    - The Order is connected to the UserProfile model.
+    - The OrderLineItem is connected to the Order and Product models .
 
-    *Category* and *Product*
+*Category* and *Product*
 
-        - The Category model lists available product categories, allows users product filtering by category.
-        - The Product model holds key information for each product, connected to the Category model. 
+    - The Category model lists available product categories, allows users product filtering by category.
+    - The Product model holds key information for each product, connected to the Category model. 
 
-    *WishList* and *WishlistLineItem*
+*WishList* and *WishlistLineItem*
 
-        - WishList and WishlistLineItem models allow users to create there wishlist, to add/remove individual products to/from their wishlist.
-        - Creating wishlist allows users to save items for further quicker access.
-        - The WishlistLineItem model is connected to the WishList model, Product model and User model (created by Allauth on registration).
+    - WishList and WishlistLineItem models allow users to create there wishlist, to add/remove individual products to/from their wishlist.
+    - Creating wishlist allows users to save items for further quicker access.
+    - The WishlistLineItem model is connected to the WishList model, Product model and User model (created by Allauth on registration).
 
-    *Review*
+*Review*
 
-        - The Review model allows users to leave reviews on products.
-        - The Review model is connected to the UserProfile and Product models. 
+    - The Review model allows users to leave reviews on products.
+    - The Review model is connected to the UserProfile and Product models. 
 
 ### Wireframes
 
@@ -308,21 +308,7 @@ The website is responsive on many device sizes (down to 320 px).
 
 ### Testing HTML, CSS, JS and Python code
 
-The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate HTML, CSS, JS and Python code, respectively, to ensure no syntax error. Please see [Here](docs/testing/manual_testing.md).
-
-- [W3C Markup Validator](https://validator.w3.org/) did not detect any errors in the HTML code on all pages of the project:
-
-  <img src="docs/testing/images/validators/w3c-markup-validator.jpg" alt="Results in W3C Markup Validator." width="300px" height="auto">
-
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) did not detect any problem in the CSS code:
-
-  <img src="docs/testing/images/validators/w3c-css-validator.jpg" alt="Results in W3C CSS Validator." width="300px" height="auto">
-
-- [JSHint](https://jshint.com/) did not detect any problem in the JavaScript code.
-
-- [PEP8 online](http://pep8online.com/) did not detect any problem in the Python code:
-
-  <img src="docs/testing/images/validators/pep8-online.jpg" alt="Results in PEP8 online validator." width="150" height="auto">
+The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate HTML, CSS, JS and Python code, respectively, to ensure no syntax error. Please see results [Here](docs/testing/validators_testing.md).
 
 ### Testing User Stories from User Experience (UX) Section
 

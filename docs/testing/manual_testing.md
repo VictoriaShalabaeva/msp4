@@ -171,6 +171,19 @@ Search and sorting/filtering functionality is described in the *As a shopper* se
 
 ### Existing bugs
 
-1. On the *Product details* page, in select options tags, the first option displayed text is in grey color. In addition, when color options are opened in a dropdown menu, the text on hover becomes white with blue background. 
+1. On *Product details* page, in select options tags, the first option displayed text is in grey color. In addition, when color options are opened in a dropdown menu, the text on hover becomes white with blue background. 
 
     <img src="images/bugs/grey_text_color_option_bug.jpg" alt="Bug in option select tag." width="200px" height="auto">
+
+2. On *Product details* page, the description text for products was not modified/corrected and come from the database in its original state. For some products, the description is too long, can contain list of ingredients, can miss punctuation marks and spaces between different words or can be rendered with html tags. Due to a lack of time, the revision of the text content was left for future improvement. Here is some examples of unappropriate product descriptions:
+
+    <img src="images/bugs/unappropriate_product_description.jpg" alt="Examples of unappropriate product description." width="700px" height="auto">
+
+3. In the previous version of the website, it was possible to remove items from a wishlist on the *Product Details* page. When the product was added to a wishlist, the button *Add to Wishlist* became *Remove from Wishlist*.
+
+    <img src="images/bugs/add_to_wishlist_btn.jpg" alt="Add to Wishlist button becomes Remove from Wishlist button." width="500px" height="auto">
+    
+Hovewer, if the color of the product was further changed to another color (in the dropdown menu), the button did not turn back to a *Add to wishlist*, but was remaining *Remove from wishlist*. This was posing several problems. First of all, in this case, it was not possible to add several colors of the same product. Secondly, if the color of the product in a dropdown menu was left changed and one would click the *Remove from Wishlist* button (while previously the same product with different color was added) it would give a 500 Service error (which would show very poor user experience). 
+
+It was decided to remove the button *Remove from Wishlist* from *Product Details* page and to choose functionality to add several colors to a wishlist (important feature as then items with specific colors have to be further added to a shopping bag directly from a wishlist). In case a user tries to add exactly the same item (with the same color), a warning message would be displayed. Items can be removed from a wishlist from the *Wishlist* page.
+

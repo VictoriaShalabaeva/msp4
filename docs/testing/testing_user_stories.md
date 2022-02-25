@@ -1,6 +1,6 @@
 # Testing User Stories from User Experience (UX) Section
 
-## As a shopper, I want to view a list of products and select some to purchase.
+**As a shopper, I want to view a list of products and select some to purchase.**
   
   - A shopper can click the links in the navigation bar or on the button *Shop Now* and be redirected to the corresponding products page. 
 
@@ -11,13 +11,13 @@
     <img src="images/user_stories/list_of_products.jpg" alt="All products." width="500px" height="auto">
 
 
-## As a shopper, I want to view individual products details and identify the price, description, product rating, product image and available colors. 
+**As a shopper, I want to view individual products details and identify the price, description, product rating, product image and available colors.** 
 
   - A shopper can click on the product of interest and be redirected to a *Products Details* page. Here he will find more detailed information on a specific product.
 
     <img src="images/user_stories/product_details.jpg" alt="Product details page." width="500px" height="auto">
 
-## As a shopper, I want to easily select the color and quantity of a product when purchasing it.
+**As a shopper, I want to easily select the color and quantity of a product when purchasing it.**
 
   - In the *Products Details" page, a shopper can select a color and quantity of each product.
 
@@ -27,49 +27,49 @@
 
     <img src="images/user_stories/product_quantity_in_shopping_bag.jpg" alt="Product quantity on the shopping bag page." width="500px" height="auto">
 
-## As a shopper, I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).
+**As a shopper, I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).**
 
   - Before taking a decision on purchasing any products, a shopper can read reviews on a specific product left by other users."
 
     <img src="images/user_stories/reviews.jpg" alt="Product reviews." width="500px" height="auto">
 
-## As a shopper, I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.
+**As a shopper, I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.**
 
   - On the *Product detailes* page, a shopper can click on a *Add a Review* button to write a review (see image with a *Add a Review* button above). When clicking the button, a shopper can write a review by filling in a form.
 
     <img src="images/user_stories/add_review.jpg" alt="Add Review page." width="200px" height="auto">
 
-## As a shopper, I want to be able to edit or delete my reviews (in case I change my opinion).
+**As a shopper, I want to be able to edit or delete my reviews (in case I change my opinion).**
 
   - After a review submission, a shopper can edit (or delete) his reviews by clicking on *Edit* (or *Delete*) buttons available at the bottom of each review. Upon clicking on *Edit* button, a shopper is redirected to a *Edit Review* page to resubmite a form. If *Delete* button is clicked, the review is deleted and an info message is shown.
 
   <img src="images/user_stories/edit_review.jpg" alt="Edit Review page." width="500px" height="auto">
 
-## As a shopper, I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.
+**As a shopper, I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.**
 
   - Products can be sorted from the dropdown menu in the navigation bar.
 
     <img src="images/user_stories/products_sorting.jpg" alt="Product sorting from dropdown menu." width="500px" height="auto">
 
-## As a shopper, I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).
+**As a shopper, I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).**
 
   - A specific category of products can chosen from the navigation bar and then be further sorted from the filter box.
 
     <img src="images/user_stories/products_sorting_filter_box.jpg" alt="Product sorting from filter box." width="500px" height="auto">
 
-## As a shopper, I want to search by name, brand or description to find a specific product I would like to purchase.
+**As a shopper, I want to search by name, brand or description to find a specific product I would like to purchase.**
 
   - A shopper can search by name, brand or description to find a specific product using a search box on the top of each page.
 
     <img src="images/user_stories/search_bar.jpg" alt="Search bar." width="500px" height="auto">
 
-## As a shopper, I want to easily see what I have searched for and the number of results.
+**As a shopper, I want to easily see what I have searched for and the number of results.**
 
   - A shopper can easily view a number of search results.
 
     <img src="images/user_stories/search_result.jpg" alt="Search results." width="500px" height="auto">
 
-## As a shopper, I want to view items in my bag to be purchased.
+**As a shopper, I want to view items in my bag to be purchased.**
 
   - The items to be purchased can be viewed on the *Shopping Bag* page. 
 
@@ -79,28 +79,51 @@
 
     <img src="images/user_stories/info_box.jpg" alt="Info box." width="200px" height="auto">
 
-## As a shopper, I want to adjust the quantity of individual items in my bag.
+**As a shopper, I want to adjust the quantity of individual items in my bag.**
 
   - The product quantuty can be adjust on the *Shopping Bag* page (please see image above).
 
-## As a shopper, I want to easily view the total of my purchases at any time to avoid spending too much.
+**As a shopper, I want to easily view the total of my purchases at any time to avoid spending too much.**
 
   - A shopper can view the total of his purchases at the top right corner of each page. 
 
     <img src="images/user_stories/bag_total.jpg" alt="Bag purchases total." width="500px" height="auto">
 
-## As a shopper, I want to easily enter my payment information and check out quickly without hassles
+**As a shopper, I want to easily enter my payment information and check out quickly without hassles**
 
-  - A shopper can click on "Secure Checkout" button either from a *Shopping bag* or from an info window with a shopping bag summery.
+  - A shopper can click on "Secure Checkout" button either from a *Shopping bag* page or from an info window with a shopping bag summery.
 
     <img src="images/user_stories/secure_checkout.jpg" alt="Secure checkout buttons." width="500px" height="auto">
-
-  - When a shopper goes to a *Checkout* page they are presented with a two column container that has delivery details on the left and another order summary on the right. The delivery details will be pre-populate if the user has logged in with active account. If the user is not logged in, the order will still be processed but will be done as an Anonymous user. The user can log in by clicking the link at the bottom of the screen which will take them to the log in screen and then back to the Shopping Basket. Credit card details are entered in to the bottom field and the field is validated using Stripe. Clicking Complete Order will display an "processing" overlay and then take the user to the Checkout Success page. The user is able to return to the Shopping Bag page if they wish to amend the order before payment processing. This requirement is deemed as being completed.
 
   - On the *Checkout* page a shopper will find a form to fill in a delivery information (if a shopper is logged in, the delivery information will be pre-populated). If the user is not logged in, the order will be processed for an anonymous user. 
   
   - A shopper can view a summery of his order. 
-  
-  - The payment information is on the bottom of the page.
 
-    <img src="images/user_stories/checkout.jpg" alt="Secure checkout buttons." width="500px" height="auto">
+  <img src="images/user_stories/checkout_page.jpg" alt="Checkout page." width="500px" height="auto">
+  
+  - The payment information is on the bottom of the page, the validation is done via Stripe. Clicking *Complete Order* button will display an overlay with a spinning icon while the payment is processed. 
+
+  <img src="images/user_stories/overlay.jpg" alt="Overlay with a spinning icon while the payment is processed." width="500px" height="auto">
+
+**As a shopper, I want to view an order confirmation after checkout.**
+
+- A user can view the *Checkout Success* page with a success info message on the top right corner of the page, summary of his order and delivery information. A user also receives a confirmation email on his order.
+
+  <img src="images/user_stories/complete_order.jpg" alt="Checkout Success page." width="500px" height="auto">
+
+**As a shopper, I want to create my wishlist (to add and remove products).**
+
+- On the *Product Details* page, a logged in user can view a button *Add to Wishlist*. When clicking this button, products are added to the user's wishlist. When products are added to a wishlist the button becomes *Remove from Wishlist*. 
+
+  <img src="images/user_stories/add_to_wishlist_btn.jpg" alt="Add to Wishlist button on Product Details page." width="500px" height="auto">
+
+- In order to access a wishlist, a user can click on the *heart* icon on the navigation bar. The page with a wishlist will list all added products. Products can be removed from wishlist also by clicking *Remove* button.
+
+  <img src="images/user_stories/wishlist_page.jpg" alt="Wishlist page." width="500px" height="auto">
+
+**As a shopper, I want to add items to the shopping bag directly from my wishlist.**
+
+- A user can add items to a shopping bag directly from the *Wishlist* page (see image above).
+
+---
+

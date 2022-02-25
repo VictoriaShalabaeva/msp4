@@ -35,7 +35,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 1.5rem;
     width: 1.5rem;
 }
 
@@ -481,4 +480,12 @@ select,
     .bag-font {
         font-size: 0.8rem;
     }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+}
+
+.dropdown-menu {
+    left: -100px;
 }

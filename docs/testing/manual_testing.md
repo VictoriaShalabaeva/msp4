@@ -124,11 +124,9 @@ Search and sorting/filtering functionality is described in the *As a shopper* se
     - iPad (768 x 1024)
     - Surface Duo (540 x 720)
     - iPhone 6/7/8 Plus (414 x 736)
-    - Pixel 2 (411 x 731)
     - iPhone 6/7/8 (375 x 667)
     - Nexus 4 (384 x 640)
-    - iPhone X (375 x 812)
-    - Galaxy S5 (360 x 640)
+    - iPhone XR (375 x 812)
     - iPhone 5/SE (320 x 568)
 
 - Devices physically tested include:
@@ -179,7 +177,9 @@ Search and sorting/filtering functionality is described in the *As a shopper* se
 
     <img src="images/bugs/unappropriate_product_description.jpg" alt="Examples of unappropriate product description." width="700px" height="auto">
 
-3. In the previous version of the website, it was possible to remove items from a wishlist on the *Product Details* page. When the product was added to a wishlist, the button *Add to Wishlist* became *Remove from Wishlist*.
+3. Some product images have poor resolution which is particularly evident on the *Product Details* page where the image size is bigger. Considering that in the database there are ca. 900 products it was not possible to take care of each product image.
+
+4. In the previous version of the website, it was possible to remove items from a wishlist on the *Product Details* page. When the product was added to a wishlist, the button *Add to Wishlist* became *Remove from Wishlist*.
 
     <img src="images/bugs/add_to_wishlist_btn.jpg" alt="Add to Wishlist button becomes Remove from Wishlist button." width="500px" height="auto">
     

@@ -459,8 +459,6 @@ The static css, js and media files are stored in Amazon Web Services (AWS) S3 Bu
 
 ### Content
 
-- Favicon image was taken from [Iconduck](https://iconduck.com/emojis/37339/lipstick).
-
 - Background image (banner photo created by halayalex) was taken from [Freepik](https://www.freepik.com/free-photo/high-fashion-look-glamor-closeup-portrait-beautiful-sexy-stylish-caucasian-young-woman-model-with-bright-makeup-with-red-lips-with-perfect-clean-skin-big-black-hat_7249675.htm#query=makeup&position=9&from_view=search).
 
 - The makeup products dataset (Herokuapp Makeup Products by Dinara Sultangulova) was taken from [Kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products).

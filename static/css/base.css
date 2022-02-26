@@ -467,11 +467,16 @@ select {
         font-size: 0.8rem;
     }
 
-    .btn {
+    .btn,
+    .allauth-form-inner-content button {
         font-size: 0.8rem;
+    }
+
+    .search {
+        font-size: 1rem!important;
     }
 }
 
-.dropdown-menu {
+.dropdown-menu-profile {
     left: -100px;
 }

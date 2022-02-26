@@ -54,12 +54,16 @@ def edit_review(request, review_id):
     """
     Edit a review to a product
     """
+    user = get_object_or_404(UserProfile, user=request.user)
     review = get_object_or_404(Review, pk=review_id)
     if request.method == "POST":
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
-            form.save()
-            messages.success(request, "Successfully edited review.")
+            if review.user == user:
+                form.save()
+                messages.success(request, "Successfully edited review.")
+            else:
+                messages.warning(request, "You can't edit this review!")
         else:
             messages.error(
                 request,
@@ -83,7 +87,11 @@ def delete_review(request, review_id):
     """
     Delete a review for a product
     """
+    user = get_object_or_404(UserProfile, user=request.user)
     review = get_object_or_404(Review, pk=review_id)
-    review.delete()
-    messages.success(request, "Review deleted!")
+    if review.user == user:
+        review.delete()
+        messages.success(request, "Review deleted!")
+    else:
+        messages.warning(request, "You can't delete this review!")
     return redirect(reverse("product_detail", args=(review.product.id,)))

@@ -16,6 +16,8 @@
 
   Considering that I do not have access to id="image_id" (being added automatically by the django/forms), I have tried to change id attribute for "new-image" to a class attribute. However, I have further discovered that "django/forms/widgets/attrs.html" eventually also adds additional classes, which provokes similar error having two class attributes (one added by me for "new-image", another from the widget file). That's why I have decided to leave the html validator error as it is. 
 
+  Strangilly, if the html code of the page is checked in Chrome DevTools, there is no such id="image_id". It appears if one accesses the code from "View page source* button in browser.
+
   **Edit a Product page**
 
   <img src="images/validators/html_error_edit_product_page.jpg" alt="Result in W3C Markup Validator for Add Product page." width="500px" height="auto">

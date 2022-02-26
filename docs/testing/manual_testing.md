@@ -93,24 +93,61 @@ Additional testing:
 
 ---
 
-**Admin session funzionality**
+**Reviews functionality**
 
-Admin session funzionality testing is described in the *As a store owner* section of [user stories testing](testing_user_stories.md).
+A big part of *Reviews* functionality testing is described in the *As a shopper* section of [user stories testing](testing_user_stories.md).
+
+Additional testing:
+
+- The *Edit*/*Delete* buttons are displayed only to the owners of reviews. 
+
+    <img src="images/manual_testing/edit_delete_for_review_owner.jpg" alt="Edit/Delete buttons are displayed only to the owners of reviews." width="500px" height="auto">
+
+- In case other users would somehow have a link to edit/delete the review of another user, they would see a warning message when trying to click *Edit Review* button (on the *Edit Review* page).
+
+    <img src="images/manual_testing/warning_edit_delete_review.jpg" alt="Warning message when trying to delete reviews of other users." width="500px" height="auto">
 
 ---
 
-**Search and sorting/filtering functionality**
+**Wishlist functionality**
 
-Search and sorting/filtering functionality is described in the *As a shopper* section of [user stories testing](testing_user_stories.md).
+A big part of *Wishlist* functionality testing is described in the *As a shopper* section of [user stories testing](testing_user_stories.md).
+
+Additional testing:
+
+- It is not possible to access a wishlist of another user. 
+
+    <img src="images/manual_testing/edit_delete_for_review_owner.jpg" alt="Edit/Delete buttons are displayed only to the owners of reviews." width="500px" height="auto">
 
 ---
 
-**Defensive design**
+**Shopping bag functionality**
 
+A big part of *Shopping bag* functionality testing is described in the *As a shopper* section of [user stories testing](testing_user_stories.md).
+
+Additional testing:
+
+- Quantity buttons are working correctly preventing users from going below 1 and exceeding 99 ("-" and "+" disactivate).
+
+    <img src="images/manual_testing/plus_minus_buttons.jpg" alt="Plus/minus buttons are disactivated preventing users from going below 1 and exceeding 99." width="500px" height="auto">
+
+- *Update* button correctly updates the total cost when product quantity is changed. *Remove* button removes items from the *Shopping Bag* and updates the total cost.
 
 ---
+
+**Admin session functionality**
+
+- Admin session funncionality testing is described in the *As a store owner* section of [user stories testing](testing_user_stories.md).
+
+Additional testing:
+
+- Only users with admin rights can edit and delete products. If other users introduce a link for edit/delete products, they will see a warning messages.
+
+    <img src="images/manual_testing/warning_if_not_admin.jpg" alt="Plus/minus buttons are disactivated preventing users from going below 1 and exceeding 99." width="500px" height="auto">
 
 **Further Testing**
+
+- Search and sorting/filtering functionality is described in the *As a shopper* section of [user stories testing](testing_user_stories.md).
 
 - The Website was tested on Google Chrome, Mozilla Firefox and Microsoft Edge browsers.
 
@@ -173,17 +210,23 @@ Search and sorting/filtering functionality is described in the *As a shopper* se
 
     <img src="images/bugs/grey_text_color_option_bug.jpg" alt="Bug in option select tag." width="200px" height="auto">
 
-2. On *Product details* page, the description text for products was not modified/corrected and come from the database in its original state. For some products, the description is too long, can contain list of ingredients, can miss punctuation marks and spaces between different words or can be rendered with html tags. Due to a lack of time, the revision of the text content was left for future improvement. Here is some examples of unappropriate product descriptions:
+2. On physically tested mobile devices (iPhoneXR and Huawei Mate 20), squared icons and colors in select/option tags are not displayed properly.
+
+    <img src="images/bugs/select_option_mobile_bug.jpg" alt="Bug in option select tag in mobile devices." width="200px" height="auto">
+
+3. On *Product details* page, the description text for products was not modified/corrected and come from the database in its original state. For some products, the description is too long, can contain list of ingredients, can miss punctuation marks and spaces between different words or can be rendered with html tags. Due to a lack of time, the revision of the text content was left for future improvement. Here is some examples of unappropriate product descriptions:
 
     <img src="images/bugs/unappropriate_product_description.jpg" alt="Examples of unappropriate product description." width="700px" height="auto">
 
-3. Some product images have poor resolution which is particularly evident on the *Product Details* page where the image size is bigger. Considering that in the database there are ca. 900 products it was not possible to take care of each product image.
+4. Some product images have poor resolution which is particularly evident on the *Product Details* page where the image size is bigger. Considering that in the database there are ca. 900 products it was not possible to take care of each product image.
 
-4. In the previous version of the website, it was possible to remove items from a wishlist on the *Product Details* page. When the product was added to a wishlist, the button *Add to Wishlist* became *Remove from Wishlist*.
+5. In the previous version of the website, it was possible to remove items from a wishlist on the *Product Details* page. When the product was added to a wishlist, the button *Add to Wishlist* became *Remove from Wishlist*.
 
     <img src="images/bugs/add_to_wishlist_btn.jpg" alt="Add to Wishlist button becomes Remove from Wishlist button." width="500px" height="auto">
     
 Hovewer, if the color of the product was further changed to another color (in the dropdown menu), the button did not turn back to a *Add to wishlist*, but was remaining *Remove from wishlist*. This was posing several problems. First of all, in this case, it was not possible to add several colors of the same product. Secondly, if the color of the product in a dropdown menu was left changed and one would click the *Remove from Wishlist* button (while previously the same product with different color was added) it would give a 500 Service error (which would show very poor user experience). 
 
 It was decided to remove the button *Remove from Wishlist* from *Product Details* page and to choose functionality to add several colors to a wishlist (important feature as then items with specific colors have to be further added to a shopping bag directly from a wishlist). In case a user tries to add exactly the same item (with the same color), a warning message would be displayed. Items can be removed from a wishlist from the *Wishlist* page.
+
+6. Logged in users, who have items in their shopping bag, loose their shopping bag items upon logging out.
 

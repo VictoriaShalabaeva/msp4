@@ -173,7 +173,9 @@ The website is responsive on many device sizes (down to 320 px).
 
 - Rating functionality. The rating information currently present on the *Product Details* page comes from a dataset. For the moment, there is no functionality to collect rating input from the shoppers to eventually add them to already present rating data.
 
-- Possibility to add items to the shopping bag and wishlist from *Products* page (where all products are displayed).
+- Possibility to add items to the shopping bag and wishlist from *Products* page (the page where all products are displayed).
+
+- Custom 404 and 500 error pages to redirect to *Home* page.
 
 ---
 

@@ -37,13 +37,13 @@
 
 **I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.**
 
-  - On the *Product detailes* page, a shopper can click on a *Add a Review* button to write a review (see image with a *Add a Review* button above). When clicking the button, a shopper can write a review by filling in a form.
+  - On the *Product details* page, a shopper can click on a *Add a Review* button to write a review (see image with a *Add a Review* button above). When clicking the button, a shopper can write a review by filling in a form.
 
     <img src="images/user_stories/add_review.jpg" alt="Add Review page." width="200px" height="auto">
 
 **I want to be able to edit or delete my reviews (in case I change my opinion).**
 
-  - After a review submission, a shopper can edit (or delete) his reviews by clicking on *Edit* (or *Delete*) buttons available at the bottom of each review. Upon clicking on *Edit* button, a shopper is redirected to a *Edit Review* page to resubmite a form. If *Delete* button is clicked, the review is deleted and an info message is shown.
+  - After a review submission, a shopper can edit (or delete) his reviews by clicking on *Edit* (or *Delete*) buttons available at the bottom of each review. Upon clicking on *Edit* button, a shopper is redirected to a *Edit Review* page to resubmit a form. If *Delete* button is clicked, the review is deleted and an info message is shown.
 
     <img src="images/user_stories/edit_review.jpg" alt="Edit Review page." width="500px" height="auto">
 
@@ -55,7 +55,7 @@
 
 **I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).**
 
-  - A specific category of products can chosen from the navigation bar and then be further sorted from the filter box.
+  - A specific category of products can be chosen from the navigation bar and then be further sorted from the filter box.
 
     <img src="images/user_stories/products_sorting_filter_box.jpg" alt="Product sorting from filter box." width="500px" height="auto">
 
@@ -83,7 +83,7 @@
 
 **I want to adjust the quantity of individual items in my bag.**
 
-  - The product quantuty can be adjust on the *Shopping Bag* page (please see image above).
+  - The product quantity can be adjust on the *Shopping Bag* page (please see image above).
 
 **I want to easily view the total of my purchases at any time to avoid spending too much.**
 
@@ -93,7 +93,7 @@
 
 **I want to easily enter my payment information and check out quickly without hassles**
 
-  - A shopper can click on "Secure Checkout" button either from a *Shopping bag* page or from an info window with a shopping bag summery.
+  - A shopper can click on "Secure Checkout" button either from a *Shopping bag* page or from an info window with a shopping bag summary.
 
     <img src="images/user_stories/secure_checkout.jpg" alt="Secure checkout buttons." width="500px" height="auto">
 
@@ -159,7 +159,7 @@
 
     <img src="images/user_stories/confirm_email_address.jpg" alt="Confirm email address page." width="500px" height="auto">
 
-- After a user clicks *Confirm* button, he will be redirected to *Sign In* page and view the sucssess info message.
+- After a user clicks *Confirm* button, he will be redirected to *Sign In* page and view the success info message.
 
     <img src="images/user_stories/success_confirmation.jpg" alt="Successful email confirmation." width="500px" height="auto">
 
@@ -199,7 +199,7 @@
 
     <img src="images/user_stories/change_password.jpg" alt="Change Password page." width="200px" height="auto"> 
 
-- After a user has submitted a new password for his accoun, he will view a successful info message. by clicking on *Set Password*, he will be redirected to *Sign In* page.
+- After a user has submitted a new password for his account, he will view a successful info message. by clicking on *Set Password*, he will be redirected to *Sign In* page.
 
     <img src="images/user_stories/password_change_successful.jpg" alt="Password changed successfully." width="500px" height="auto"> 
 
@@ -233,7 +233,7 @@
 
     <img src="images/user_stories/edit_product_page.jpg" alt="Edit product page." width="300px" height="auto">
 
-**I want to delete items that are no longer fore sale.**
+**I want to delete items that are no longer for sale.**
 
 - A store owner can delete products by clicking on *Delete* button either from *Products* page or from individual *Product Details* page. Please see image related to *Edit* button (above).
 
@@ -243,4 +243,4 @@
 
 **I want to provide users with updates to any action.**
 
-- Whatever action is performed by any user (whether it is a customer or a store owner), the user is always notified with info messages appearing on the right top of the page. The examples of such messages can be seen above in several images throughtout the present document.
+- Whatever action is performed by any user (whether it is a customer or a store owner), the user is always notified with info messages appearing on the right top of the page. The examples of such messages can be seen above in several images throughout the present document.

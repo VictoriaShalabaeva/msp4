@@ -133,7 +133,7 @@
                         <p class="text-center">{{ review.user }}</p>
                         <p class="text-center mb-0"><small>{{ review.date_posted|date:"d M, Y" }}</small></p>
                         <!--shows the edit/delete pills if the user is authenticated-->
-                        {% if request.user.is_authenticated %}
+                        {%  if request.user == review.user.user %}
                         <small class="text-center">
                             <a href="{% url 'edit_review' review.id %}">Edit</a> |
                             <a class="text-danger" href="{% url 'delete_review' review.id %}">Delete</a>

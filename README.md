@@ -16,112 +16,112 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 **As a shopper:**
 
-    - I want to view a list of products and select some to purchase.
-    - I want to view individual products details and identify the price, description, product rating, product image and available colors. 
-    - I want to easily select the color and quantity of a product when purchasing it.
+- I want to view a list of products and select some to purchase.
+- I want to view individual products details and identify the price, description, product rating, product image and available colors. 
+- I want to easily select the color and quantity of a product when purchasing it.
 
-    - I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).
-    - I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.
-    - I want to be able to edit or delete my reviews (in case I change my opinion).
+- I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).
+- I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.
+- I want to be able to edit or delete my reviews (in case I change my opinion).
 
-    - I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.
-    - I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).
-    
-    - I want to search by name, brand or description to find a specific product I would like to purchase.
-    - I want to easily see what I have searched for and the number of results.
+- I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.
+- I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).
 
-    - I want to view items in my bag to be purchased.
-    - I want to adjust the quantity of individual items in my bag.
-    - I want to easily view the total of my purchases at any time to avoid spending too much.
+- I want to search by name, brand or description to find a specific product I would like to purchase.
+- I want to easily see what I have searched for and the number of results.
 
-    - I want to easily enter my payment information and check out quickly without hassles.
-    - I want to view an order confirmation after checkout.
+- I want to view items in my bag to be purchased.
+- I want to adjust the quantity of individual items in my bag.
+- I want to easily view the total of my purchases at any time to avoid spending too much.
 
-    - I want to create my wishlist (to add and remove pruducts).
-    - I want to add items to the shopping bag directly from my wishlist.
+- I want to easily enter my payment information and check out quickly without hassles.
+- I want to view an order confirmation after checkout.
+
+- I want to create my wishlist (to add and remove products).
+- I want to add items to the shopping bag directly from my wishlist.
 
 **As a site user:**
     
-    - I want to easily register for an account and receive an email confirmation.
-    - I want to easily login/logout and to view my profile.
-    - I want to easily recover my password in case I forget it.
-    - I want to view my personal order history and save my delivery information.
+- I want to easily register for an account and receive an email confirmation.
+- I want to easily login/logout and to view my profile.
+- I want to easily recover my password in case I forget it.
+- I want to view my personal order history and save my delivery information.
 
 **As a store owner:**
 
-    - I want to add new items to my store.
-    - I want to edit/update products details.
-    - I want to delete items that are no longer fore sale.
-    - I want to provide users with updates to any action.
+- I want to add new items to my store.
+- I want to edit/update products details.
+- I want to delete items that are no longer fore sale.
+- I want to provide users with updates to any action.
       
 ### Design
 
-**Colour Scheme**
+**Color Scheme**
 
-    The main colours used are black #000000, white #FFFFFF and red #a50f12.
+The main colors used are black #000000, white #FFFFFF and red #a50f12.
 
 **Typography**
 
-    The Roboto and Playfair Display (used for Logo) fonts are the main fonts used throughout the whole website with Sans Serif and Serif as the fallback fonts in case for any reason the font isn't being imported into the site correctly. Roboto is a clean font used frequently in programming, so it is both attractive and appropriate.
+The Roboto and Playfair Display (used for Logo) fonts are the main fonts used throughout the whole website with Sans Serif and Serif as the fallback fonts in case for any reason the font isn't being imported into the site correctly. Roboto is a clean font used frequently in programming, so it is both attractive and appropriate.
 
 **Imagery**
      
-    The large background image on the *Home* page is striking and catches user's attention (see the context credit section below). 
-    
-    All other images on the site are the image URLs coming from the product database (see the context credit section below).
+The large background image on the *Home* page is striking and catches user's attention (see the context credit section below). 
+
+All other images on the site are the image URLs coming from the product database (see the context credit section below).
 
 **Database**
 
-    The makeup products dataset (Herokuapp Makeup Products by Dinara Sultangulova, taken from [Kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products)) was used for creation of the e-commerce website saling makeup products. The origional JSON dataset file was modified in python shell to meet the fixtures format.
+The makeup products dataset, Herokuapp Makeup Products by Dinara Sultangulova, taken from [Kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products), was used for creation of the e-commerce website selling makeup products. The original JSON dataset file was modified in python shell to meet the fixtures format.
 
-    SQLite database was used during project development while Heroku Postgres was used in production.
+SQLite database was used during project development while Heroku Postgres was used in production.
 
 **Models**
 
 *UserProfile*
 
-    - The UserProfile model maintains default delivery information and order history.
-    - The UserProfile is connected to the User model created by Allauth on registration.
+- The UserProfile model maintains default delivery information and order history.
+- The UserProfile is connected to the User model created by Allauth on registration.
 
 *Order* and *OrderLineItem*
 
-    - The Order and OrderLineItem models allow users to view their previous orders.
-    - The Order is connected to the UserProfile model.
-    - The OrderLineItem is connected to the Order and Product models .
+- The Order and OrderLineItem models allow users to view their previous orders.
+- The Order is connected to the UserProfile model.
+- The OrderLineItem is connected to the Order and Product models .
 
 *Category* and *Product*
 
-    - The Category model lists available product categories, allows users product filtering by category.
-    - The Product model holds key information for each product, connected to the Category model. 
+- The Category model lists available product categories, allows users product filtering by category.
+- The Product model holds key information for each product, connected to the Category model. 
 
 *WishList* and *WishlistLineItem*
 
-    - WishList and WishlistLineItem models allow users to create there wishlist, to add/remove individual products to/from their wishlist.
-    - Creating wishlist allows users to save items for further quicker access.
-    - The WishlistLineItem model is connected to the WishList model, Product model and User model (created by Allauth on registration).
+- WishList and WishlistLineItem models allow users to create there wishlist, to add/remove individual products to/from their wishlist.
+- Creating wishlist allows users to save items for further quicker access.
+- The WishlistLineItem model is connected to the WishList model, Product model and User model (created by Allauth on registration).
 
 *Review*
 
-    - The Review model allows users to leave reviews on products.
-    - The Review model is connected to the UserProfile and Product models. 
+- The Review model allows users to leave reviews on products.
+- The Review model is connected to the UserProfile and Product models. 
 
 ### Wireframes
 
-  - *Home* page - [View](docs/wireframes/home-page.pdf)
+- *Home* page - [View](docs/wireframes/home-page.pdf)
 
-  - *All Products* page - [View](docs/wireframes/all-products-page.pdf)
+- *All Products* page - [View](docs/wireframes/all-products-page.pdf)
 
-  - *Product Detail* page - [View](docs/wireframes/product-detail-page.pdf)
+- *Product Detail* page - [View](docs/wireframes/product-detail-page.pdf)
 
-  - *My Profile* page - [View](docs/wireframes/my-profile-page.pdf)
+- *My Profile* page - [View](docs/wireframes/my-profile-page.pdf)
 
-  - *Shopping Bag* page - [View](docs/wireframes/shopping-bag-page.pdf)
+- *Shopping Bag* page - [View](docs/wireframes/shopping-bag-page.pdf)
 
-  - *Wishlist* page - [View](docs/wireframes/wishlist-page.pdf)
+- *Wishlist* page - [View](docs/wireframes/wishlist-page.pdf)
 
-  - *Sign In* page - [View](docs/wireframes/sign-in-page.pdf)
+- *Sign In* page - [View](docs/wireframes/sign-in-page.pdf)
 
-  - *Sign Up* page - [View](docs/wireframes/sign-up-page.pdf)
+- *Sign Up* page - [View](docs/wireframes/sign-up-page.pdf)
 
 ---
 
@@ -131,35 +131,35 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 The website contains:
 
-    - several pages including *Home*, *Products*, *Product Details*, *Shopping Bag*, *Wishlist*, *Checkout*, *Add a Product*, *Add a Review* pages and others. This thematic division facilitates the website navigation;
+- several pages including *Home*, *Products*, *Product Details*, *Shopping Bag*, *Wishlist*, *Checkout*, *Add a Product*, *Add a Review* pages and others. This thematic division facilitates the website navigation;
 
-    - Bootstrap responsive navigation header with a collapse plugin which groups and hides navbar content;
+- Bootstrap responsive navigation header with a collapse plugin which groups and hides navbar content;
 
-    - search functionality to search for specific products;
+- search functionality to search for specific products;
 
-    - filtering functionality to sort products by category, price, brand, rating, alphabetic order);
+- filtering functionality to sort products by category, price, brand, rating, alphabetic order);
 
-    - Bootstrap toasts to provide feedback to the users when doing any action (e.g. signing in to an account, adding items to the shopping back, updaing items quantity etc.). Users can view the current items in the shopping bag, total cost and cost of delivery; 
+- Bootstrap toasts to provide feedback to the users when doing any action (e.g. signing in to an account, adding items to the shopping back, updating items quantity etc.). Users can view the current items in the shopping bag, total cost and cost of delivery; 
 
-    - shopping bag functionality to add items, update items quantity or delete items from a shopping bag;
+- shopping bag functionality to add items, update items quantity or delete items from a shopping bag;
 
-    - checkout functionality with online test payments (via [Stripes test card details](https://stripe.com/docs/testing));
+- checkout functionality with online test payments (via [Stripes test card details](https://stripe.com/docs/testing));
 
-    - admin login functionality to add, edit or delete products. 
+- admin login functionality to add, edit or delete products. 
 
 Any user can:
 
-    - register an account,
+- register an account,
 
-    - log in as an existing user,
+- log in as an existing user,
 
-    - log out,
+- log out,
 
-    - view his profile, add delivery information and check previous orders,
+- view his profile, add delivery information and check previous orders,
 
-    - create a wishlist, add or delete products from the wishlist,
+- create a wishlist, add or delete products from the wishlist,
 
-    - leave a review on a product, view reviews left by other users. 
+- leave a review on a product, view reviews left by other users. 
 
 The website is responsive on many device sizes (down to 320 px).
 
@@ -176,6 +176,8 @@ The website is responsive on many device sizes (down to 320 px).
 - Possibility to add items to the shopping bag and wishlist from *Products* page (the page where all products are displayed).
 
 - Custom 404 and 500 error pages to redirect to *Home* page.
+
+- A page with a question whether a store owner is sure to delete a product.
 
 ---
 
@@ -309,7 +311,7 @@ The website is responsive on many device sizes (down to 320 px).
 
 The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate HTML, CSS, JS and Python code, respectively, to ensure no syntax error. Please see results [Here](docs/testing/validators_testing.md).
 
-**Testing User Stories from User Experience (UX) Section**
+**Testing User Stories**
 
 Please see [Here](docs/testing/testing_user_stories.md) the user stories testing with corresponding screenshots.
 
@@ -430,7 +432,7 @@ The static css, js and media files are stored in Amazon Web Services (AWS) S3 Bu
 
         - An appropriate name
         - Region (closest to you)
-        - Uncheck *Block All Public Access* tickbox
+        - Uncheck *Block All Public Access* tick box
 
     - Click on the *Properties* tab and enable *Static Website Hosting*. This will allow AWS to host static files.
     - Input *index.html* and *error.html* in the appropriate fields and hit save.

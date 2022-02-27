@@ -447,7 +447,7 @@ select {
     }
 
     .font-size {
-        font-size: 0.6rem;
+        font-size: 0.1rem;
     }
 
     .list-inline-item:not(:last-child) {
@@ -464,7 +464,7 @@ select {
     }
 
     .bag-font {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .btn,

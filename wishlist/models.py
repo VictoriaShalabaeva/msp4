@@ -9,7 +9,7 @@ from products.models import Product
 
 class Wishlist(models.Model):
     """
-    Model to show all product items within the users wishlist
+    Model to show all product items within the user wishlist
     """
 
     user = models.OneToOneField(

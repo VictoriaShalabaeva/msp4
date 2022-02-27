@@ -10,7 +10,7 @@ from products.models import Product
 
 class Review(models.Model):
     """
-    Review model to allow user to leave a product review
+    Review model to allow user to leave a review on a product
     """
 
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)

@@ -19,24 +19,18 @@ The website is designed to be responsive and accessible on a range of devices, m
 - I want to view a list of products and select some to purchase.
 - I want to view individual products details and identify the price, description, product rating, product image and available colors. 
 - I want to easily select the color and quantity of a product when purchasing it.
-
 - I want to view reviews left by other customers for products (to understand whether the product is worth purchasing).
 - I want to leave a review on a product, so that other users may be able to benefit from my opinion on a specific product.
 - I want to be able to edit or delete my reviews (in case I change my opinion).
-
 - I want to sort the list of available products and easily identify the best rated, best priced, categorically and brand sorted products.
 - I want to sort a specific category of products (to find the best priced or best rated products in a specific category, or sort the products in that category by name or brand).
-
 - I want to search by name, brand or description to find a specific product I would like to purchase.
 - I want to easily see what I have searched for and the number of results.
-
 - I want to view items in my bag to be purchased.
 - I want to adjust the quantity of individual items in my bag.
 - I want to easily view the total of my purchases at any time to avoid spending too much.
-
 - I want to easily enter my payment information and check out quickly without hassles.
 - I want to view an order confirmation after checkout.
-
 - I want to create my wishlist (to add and remove products).
 - I want to add items to the shopping bag directly from my wishlist.
 
@@ -96,8 +90,8 @@ SQLite database was used during project development while Heroku Postgres was us
 
 *WishList* and *WishlistLineItem*
 
-- WishList and WishlistLineItem models allow users to create there wishlist, to add/remove individual products to/from their wishlist.
-- Creating wishlist allows users to save items for further quicker access.
+- WishList and WishlistLineItem models allow users to create there wishlists, add/remove individual products to/from their wishlist.
+- Creating a wishlist allows users to save items for further quicker access.
 - The WishlistLineItem model is connected to the WishList model, Product model and User model (created by Allauth on registration).
 
 *Review*
@@ -137,7 +131,7 @@ The website contains:
 
 - search functionality to search for specific products;
 
-- filtering functionality to sort products by category, price, brand, rating, alphabetic order);
+- filtering functionality to sort products by category, price, brand, rating, alphabetic order;
 
 - Bootstrap toasts to provide feedback to the users when doing any action (e.g. signing in to an account, adding items to the shopping back, updating items quantity etc.). Users can view the current items in the shopping bag, total cost and cost of delivery; 
 
@@ -171,7 +165,7 @@ The website is responsive on many device sizes (down to 320 px).
 
 - Footer with social media links.
 
-- Rating functionality. The rating information currently present on the *Product Details* page comes from a dataset. For the moment, there is no functionality to collect rating input from the shoppers to eventually add them to already present rating data.
+- Rating functionality. The rating information currently present on the *Product Details* page comes from a dataset. For the moment, there is no functionality to collect rating input from the shoppers to eventually add them to already existing rating data.
 
 - Possibility to add items to the shopping bag and wishlist from *Products* page (the page where all products are displayed).
 
@@ -209,7 +203,7 @@ The website is responsive on many device sizes (down to 320 px).
 
 4. [AWS:](https://aws.amazon.com/)
 
-    AWS S3 and IAM modules were used the for storage and user access.
+    AWS S3 and IAM modules were used for storage and user access.
 
 5. [Heroku:](https://id.heroku.com/login)
 
@@ -221,7 +215,7 @@ The website is responsive on many device sizes (down to 320 px).
 
 7. [jQuery:](https://jquery.com/)
 
-   jQuery was used in JavaScript codes to add functionality to materialize components.
+   jQuery was used in JavaScript codes to add functionality to Bootstrap components.
 
 8. [Git:](https://git-scm.com/)
 
@@ -235,7 +229,7 @@ The website is responsive on many device sizes (down to 320 px).
 
     GitHub is used to store the project code after being pushed from GitPod.
 
-11. [SQLite:](https://www.sqlite.org/index.html
+11. [SQLite:](https://www.sqlite.org/index.html)
 
     SQLite was used as a database during project development.
     
@@ -253,7 +247,7 @@ The website is responsive on many device sizes (down to 320 px).
 
     Navbar to make a responsive navigation header,
 
-    Cards components for displaying recipes.
+    Cards components for displaying products.
 
 15. [Balsamiq:](https://balsamiq.com/)
 
@@ -335,9 +329,9 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
     
-2. Under the repository name, click "Clone or download".
+2. Under the repository name, click *Clone or download*.
     
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+3. To clone the repository using HTTPS, under *Clone with HTTPS*, copy the link.
     
 4. Open Git Bash.
     
@@ -365,99 +359,99 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 1. In the terminal:
 
-    - Type `pip3 freeze --local > requirements.txt`. It will update the list of requirements needed to run the application.
-    - Type `echo web: python app.py > Procfile` to create the Procfile.
-    - In the Procfile add `web: gunicorn msp4.wsgi:application` (check the Procfile to make sure there is no extra line after the first line as this can confuse Heroku).
+- Type `pip3 freeze --local > requirements.txt`. It will update the list of requirements needed to run the application.
+- Type `echo web: python app.py > Procfile` to create the Procfile.
+- In the Procfile add `web: gunicorn msp4.wsgi:application` (check the Procfile to make sure there is no extra line after the first line as this can confuse Heroku).
 
 2. Create application:
 
-    - Create an account at [Heroku.com](https://dashboard.heroku.com).
-    - Click on the *New* button.
-    - Select *Create new app*.
-    - Enter the name of your application.
-    - Select your region.
+- Create an account at [Heroku.com](https://dashboard.heroku.com).
+- Click the *New* button.
+- Select *Create new app*.
+- Enter the name of your application.
+- Select your region.
 
 3. Build the database in Postgres:
 
-    - Click the *Resources* tab and type in *Postgres* in the *Add-ons* search bar.
-    - Select *Heroku Postgres* and provision a free *Hobby Dev database*.
-    - Install two dependencies: `pip3 install dj_database_url` and `pip3 install psycopg2-binary`.
-    - Freeze your requirements into requirements.txt.
-    - Retrieve the *Database URL* from the hidden *Config Vars* in *Settings*.
-    - Paste the *Database URL* in the database path in *settings.py* and removed the local settings.
-    - Run migrations to build the database in Postgres.
-    - Load fixtures (*categories.json*, *products.json*) with `python3 manage.py loaddata <JSON filename>`.
-    - Create a superuser with `python3 manage.py createsuperuser` and follow the instructions in the terminal.
-    - Remove the Postgres *Database URL* so it doesn't end up in version control.
-    - Type `heroku config:set DISABLE_COLLECTSTATIC=1` in the terminal to stop Heroku collecting the static files.
+- Click the *Resources* tab and type in *Postgres* in the *Add-ons* search bar.
+- Select *Heroku Postgres* and provision a free *Hobby Dev database*.
+- Install two dependencies: `pip3 install dj_database_url` and `pip3 install psycopg2-binary`.
+- Freeze your requirements into requirements.txt.
+- Retrieve the *Database URL* from the hidden *Config Vars* in *Settings*.
+- Paste the *Database URL* in the database path in *settings.py* and removed the local settings.
+- Run migrations to build the database in Postgres.
+- Load fixtures (*categories.json*, *products.json*) with `python3 manage.py loaddata <JSON filename>`.
+- Create a superuser with `python3 manage.py createsuperuser` and follow the instructions in the terminal.
+- Remove the Postgres *Database URL* so it doesn't end up in version control.
+- Type `heroku config:set DISABLE_COLLECTSTATIC=1` in the terminal to stop Heroku collecting the static files.
 
 4. Set up connection to Github Repository:
 
-    - Click the *Deploy* tab and select *GitHub-Connect to GitHub* in the *Deployment method* section.
-    - A prompt to find a Github repository to connect to will then be displayed.
-    - Enter the repository name and click search.
-    - Once the repository name has been found, click *Connect*.
+- Click the *Deploy* tab and select *GitHub-Connect to GitHub* in the *Deployment method* section.
+- A prompt to find a Github repository to connect to will then be displayed.
+- Enter the repository name and click *Search*.
+- Once the repository name has been found, click *Connect*.
 
 5. Set environment variables:
 
-    - Click the *Setting* tab and then click *Reveal Confid Vars*.
-    - Insert your variables:
-      - AWS_ACCESS_KEY_ID: obtained from AWS
-      - AWS_SECRET_ACCESS_KEY: obtained from AWS
-      - DATABASE_URL: created when provisioned Postgres
-      - EMAIL_HOST_PASS: obtained from the email provider
-      - EMAIL_HOST_USER: host email address
-      - SECRET_KEY: obtained from miniwebtool
-      - STRIPE_PUBLIC_KEY: obtained from STRIPE
-      - STRIPE_SECRET_KEY: obtained from STRIPE
-      - STRIPE_WH_SECRET: obtained from STRIPE
-      - USE_AWS: True
+- Click the *Setting* tab and then click *Reveal Confid Vars*.
+- Insert your variables:
+    - AWS_ACCESS_KEY_ID: obtained from AWS
+    - AWS_SECRET_ACCESS_KEY: obtained from AWS
+    - DATABASE_URL: created when provisioned Postgres
+    - EMAIL_HOST_PASS: obtained from the email provider
+    - EMAIL_HOST_USER: host email address
+    - SECRET_KEY: obtained from miniwebtool
+    - STRIPE_PUBLIC_KEY: obtained from STRIPE
+    - STRIPE_SECRET_KEY: obtained from STRIPE
+    - STRIPE_WH_SECRET: obtained from STRIPE
+    - USE_AWS: True
 
 6. Enable automatic deployment:
 
-    - Click the *Deploy* tab and scroll to the *Automatic deploys* section.
-    - Choose the branch you want to deploy from, then click *Enable Automation Deploys*.
+- Click the *Deploy* tab and scroll to the *Automatic deploys* section.
+- Choose the branch you want to deploy from, then click *Enable Automation Deploys*.
 
 7. View your application:
 
-    - You can view the application by clicking on the *Open app* button located at the top right corner.
+- You can view the application by clicking the *Open app* button located at the top right corner.
 
 ### AWS
 
 The static css, js and media files are stored in Amazon Web Services (AWS) S3 Bucket.
 
-    - Go to [AWS](aws.amazon.com) and create an account.
-    - Search for S3.
-    - Create a new bucket with the following settings:
+- Go to [AWS](https://aws.amazon.com/) and create an account.
+- Search for S3.
+- Create a new bucket with the following settings:
 
-        - An appropriate name
-        - Region (closest to you)
-        - Uncheck *Block All Public Access* tick box
+    - An appropriate name
+    - Region (closest to you)
+    - Uncheck *Block All Public Access* tick box
 
-    - Click on the *Properties* tab and enable *Static Website Hosting*. This will allow AWS to host static files.
-    - Input *index.html* and *error.html* in the appropriate fields and hit save.
-    - Click on the *Properties* tab and edit *CORS configuration* to set up the required connection between the Heroku app and the bucket.
-    - Click the *Policy* tab and select *Policy Generator* to create a security policy for the bucket:
+- Click the *Properties* tab and enable *Static Website Hosting*. This will allow AWS to host static files.
+- Input *index.html* and *error.html* in the appropriate fields and hit *Save*.
+- Click the *Properties* tab and edit *CORS configuration* to set up the required connection between the Heroku app and the bucket.
+- Click the *Policy* tab and select *Policy Generator* to create a security policy for the bucket:
 
-        - The policy type: *S3 Bucket Policy*
-        - the *Action*: *get object*.
-        - Copy the *ARN (Amazon Resource Name)* from the bucket and paste it in the *ARN* field.
-    
-    - Click *Add Statement* and then *Generate Policy*.
-    - Copy the generated policy in to the *Bucket Policy Editor*.
-    - Add `/*` at the end of the resource key to allow access to all resources in the bucket.
-    - Click *Save*.
-    - Click the *Access Control* tab and set the list object permission to everyone under the *Public Access* section.
-    - Open *Identity Access Management (IAM)* from the service menu.
-    - Create a group for your user to belong to.
-    - Create an access policy for you the group which gives access to the S3 bucket.
-    - Click the *JSON* tab and select *import managed policy*, search for *S3* and select *S3 Full Access Policy*.
-    - Create a user, give them programmatic access and attach it to the group.
-    - Download the *.csv file that is generated as this contains the keys required to use AWS.
-    - Install *boto3* and *django-storages* using `pip3 install` to connect Django to AWS S3.
-    - Add the AWS keys to the *Config Vars* in *Settings* tab in Heroku (remove `DISABLE_COLLECTSTATIC=1`).
-    - Create a *custom_storages.py* file.
-    - Run `python manage.py collectstatic` and transfers the static files to AWS.
+    - The policy type: *S3 Bucket Policy*.
+    - the *Action*: *get object*.
+    - Copy the *ARN (Amazon Resource Name)* from the bucket and paste it in the *ARN* field.
+
+- Click *Add Statement* and then *Generate Policy*.
+- Copy the generated policy in to the *Bucket Policy Editor*.
+- Add `/*` at the end of the resource key to allow access to all resources in the bucket.
+- Click *Save*.
+- Click the *Access Control* tab and set the list object permission to everyone under the *Public Access* section.
+- Open *Identity Access Management (IAM)* from the service menu.
+- Create a group for your user to belong to.
+- Create an access policy for you the group which gives access to the S3 bucket.
+- Click the *JSON* tab and select *import managed policy*, search for *S3* and select *S3 Full Access Policy*.
+- Create a user, give them programmatic access and attach it to the group.
+- Download the *.csv file that is generated as this contains the keys required to use AWS.
+- Install *boto3* and *django-storages* using `pip3 install` to connect Django to AWS S3.
+- Add the AWS keys to the *Config Vars* in *Settings* tab in Heroku (remove `DISABLE_COLLECTSTATIC=1`).
+- Create a *custom_storages.py* file.
+- Run `python manage.py collectstatic` and transfers the static files to AWS.
 
 ## Credits
 

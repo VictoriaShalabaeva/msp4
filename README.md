@@ -1,6 +1,6 @@
 # Victoria's Beauty Website
 
-View the live project [Here](https://victorias-beauty.herokuapp.com/)
+View the live project [Here](https://victorias-beauty.onrender.com)
 
 *Victoria's Beauty* is a fictional e-commerce store website created for educational purposes. No commercial revenue is generated from this website.
 
@@ -69,6 +69,8 @@ All other images on the site are the image URLs coming from the product database
 The makeup products dataset, Herokuapp Makeup Products by Dinara Sultangulova, taken from [Kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products), was used for creation of the e-commerce website selling makeup products. The original JSON dataset file was modified in python shell to meet the fixtures format.
 
 SQLite database was used during project development while Heroku Postgres was used in production.
+
+After Heroku has ended their free tier offerings for deployment, a PostgreSQL database was transfered from Heroku to ElephantSQL.
 
 **Models**
 
@@ -297,6 +299,14 @@ The website is responsive on many device sizes (down to 320 px).
 
     TEMPMAIL was used to receive email at a temporary e-mail address.
 
+27. [Render:](https://render.com/)
+
+    After Heroku has ended their free tier offerings for deployment, the present project was migrated to a different free service on an alternative platform Render.
+
+28. [ElephantSQL:](https://www.elephantsql.com/)
+
+    After Heroku has ended their free tier offerings for deployment, the database was transfered to ElephantSQL.
+
 ---
 
 ## Testing
@@ -415,6 +425,8 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 7. View your application:
 
 - You can view the application by clicking the *Open app* button located at the top right corner.
+
+8. After Heroku has ended their free tier offerings for deployment, the present project was migrated to a different free service on an alternative platform [Render](https://render.com/).
 
 ### AWS
 
